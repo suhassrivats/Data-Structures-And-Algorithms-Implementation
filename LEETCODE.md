@@ -20,3 +20,6 @@ https://leetcode.com/discuss/general-discussion/675445/facebook-interview-experi
 
 CTCI to LC:
 https://leetcode.com/discuss/interview-question/256347/ctci-questions-lists
+
+List of questions sorted by common patterns:
+https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-common-patterns
