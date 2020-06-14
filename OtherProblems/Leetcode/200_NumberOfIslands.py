@@ -27,6 +27,7 @@ class Solution:
         # For every element in the matrix, check all its adjacent elements
         for i in range(rows):
             for j in range(cols):
+                # Perform DFS if the element is 1
                 if grid[i][j] == '1':
                     self.dfs(grid, i, j)
                     count += 1
@@ -34,7 +35,7 @@ class Solution:
 
     def dfs(self, grid, i, j):
         # Boundary case for matrix
-        if i<0 or j<0 or i>=len(grid) or j>=len(grid[0]) or grid[i][j] != '1':
+        if i < 0 or j < 0 or i >= len(grid) or j >= len(grid[0]) or grid[i][j] != '1':
             return
 
         # Mark the cell as visited

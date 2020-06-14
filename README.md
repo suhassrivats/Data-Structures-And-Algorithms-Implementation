@@ -17,6 +17,7 @@
    - Implementation
      - Using Array
      - Using Linked List
+     - Using Stacks
      - Circular Queue using Array
      - Circular Queue using Linked List
 5. Deque
