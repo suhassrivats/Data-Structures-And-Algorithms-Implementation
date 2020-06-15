@@ -13,6 +13,7 @@
    - Implementation
      - Using Array
      - Using Linked List
+     - Using Queues
 4. Queues
    - Implementation
      - Using Array
