@@ -31,7 +31,7 @@
 
 ## Algorithms
 
-1. Recursion
-   - Solutions for [CodingBat](https://codingbat.com/) Recursion problems are implemented in Python
+1. CodingBat
+   - Implement Recursion Algorithms listed in [CodingBat](https://codingbat.com/)
 2. Sorting
    - Selection Sort
