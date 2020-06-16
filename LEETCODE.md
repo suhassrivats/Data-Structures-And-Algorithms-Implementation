@@ -4,7 +4,8 @@ Read this before doing LC:
 https://medium.com/@alimirio/before-you-start-solving-problems-on-leetcode-prep-work-9d65fc964c6f
 
 Consistent practice advice:
-https://leetcode.com/discuss/general-discussion/318537/consistent-practice-advice
+- https://leetcode.com/discuss/general-discussion/318537/consistent-practice-advice
+- https://news.ycombinator.com/item?id=7930098
 
 Getting good at LC:
 https://heidi-newton.com/blog/getting-good-at-leetcode
