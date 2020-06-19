@@ -34,7 +34,6 @@ def printNGE_using_stack(arr):
     for i in range(len(arr)-1, -1, -1):
         if not stack:
             output.append(-1)
-            stack.append(arr[i])
         elif stack and stack[-1] > arr[i]:
             output.append(stack[-1])
         elif stack and stack[-1] < arr[i]:
