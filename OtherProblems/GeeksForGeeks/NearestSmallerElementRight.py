@@ -23,10 +23,11 @@ def next_smaller_element_right(arr):
         stack.append(arr[i])
 
     print(output[::-1])
-    return output
+    return output[::-1]
 
 
 # Tests
 # arr = [4, 5, 2, 10, 8]
-arr = [1, 3, 2, 4]
+# arr = [1, 3, 2, 4]
+arr = [1, 1]
 next_smaller_element_right(arr)
