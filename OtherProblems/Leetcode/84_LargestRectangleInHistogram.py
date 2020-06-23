@@ -22,15 +22,12 @@ class Solution:
         area = []
         widths = []
 
-        if len(heights) == 1:
-            widths.append(1)
-        else:
-            right = nearest_smaller_element_right(heights)
-            left = nearest_smaller_element_left(heights)
+        right = next_smaller_element_right(heights)
+        left = next_smaller_element_left(heights)
 
-            # Populate the widths array
-            for i in range(len(heights)):
-                widths.append(right[i] - left[i] - 1)
+        # Populate the widths array
+        for i in range(len(heights)):
+            widths.append(right[i] - left[i] - 1)
 
         # Populate the area array
         for i in range(len(heights)):
