@@ -16,7 +16,8 @@ class Solution:
         - Time Complexity: O(n)
         - Space Complexity (auxiliary): O(n)
         """
-        if not heights or (len(heights) == 1 and heights[0] <= 0):
+
+        if not heights:
             return 0
 
         area = []
@@ -36,7 +37,7 @@ class Solution:
         return max(area)
 
 
-def nearest_smaller_element_right(arr):
+def next_smaller_element_right(arr):
     stack = []
     output = []
     psuedo_index = len(arr)
@@ -59,7 +60,7 @@ def nearest_smaller_element_right(arr):
     return output[::-1]
 
 
-def nearest_smaller_element_left(arr):
+def next_smaller_element_left(arr):
     stack = []
     output = []
     psuedo_index = -1
