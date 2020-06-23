@@ -13,8 +13,8 @@ def next_smaller_element_right(arr):
             output.append(-1)
         elif stack and stack[-1] < arr[i]:
             output.append(stack[-1])
-        elif stack and stack[-1] > arr[i]:
-            while stack and stack[-1] > arr[i]:
+        elif stack and stack[-1] >= arr[i]:
+            while stack and stack[-1] >= arr[i]:
                 stack.pop()
             if not stack:
                 output.append(-1)
