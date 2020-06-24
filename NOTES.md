@@ -1,36 +1,46 @@
 # LeetCode Advice
 
 Read this before doing LC:
-https://medium.com/@alimirio/before-you-start-solving-problems-on-leetcode-prep-work-9d65fc964c6f
+
+- https://medium.com/@alimirio/before-you-start-solving-problems-on-leetcode-prep-work-9d65fc964c6f
 
 Consistent practice advice:
 - https://leetcode.com/discuss/general-discussion/318537/consistent-practice-advice
 - https://news.ycombinator.com/item?id=7930098
 
 Getting good at LC:
-https://heidi-newton.com/blog/getting-good-at-leetcode
+
+- https://heidi-newton.com/blog/getting-good-at-leetcode
 
 Strategy to use LC for Cracking Coding Interviews Effectively:
-https://www.youtube.com/watch?v=q15JgVVLXQg
+
+- https://www.youtube.com/watch?v=q15JgVVLXQg
 
 CTCI vs EPI:
-https://www.reddit.com/r/cscareerquestions/comments/4xel2x/ctci_vs_epi/
+
+- https://www.reddit.com/r/cscareerquestions/comments/4xel2x/ctci_vs_epi/
 
 Facebook:
-https://leetcode.com/discuss/general-discussion/675445/facebook-interview-experiences-all-combined-from-lc-till-date-07-jun-2020
+
+- https://leetcode.com/discuss/general-discussion/675445/facebook-interview-experiences-all-combined-from-lc-till-date-07-jun-2020
 
 CTCI to LC:
-https://leetcode.com/discuss/interview-question/256347/ctci-questions-lists
+
+- https://leetcode.com/discuss/interview-question/256347/ctci-questions-lists
 
 List of questions sorted by common patterns:
-https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-common-patterns
+
+- https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-common-patterns
 
 How to pick best questions for interviews in GFG and LC:
-https://www.youtube.com/watch?v=HYK5lpkKBPo
+
+- https://www.youtube.com/watch?v=HYK5lpkKBPo
 
 # My Notes
 
-**Space Complexity:** [Detailed Explanation](https://www.youtube.com/watch?v=yOb0BL-84h8)
+Space Complexity:
+
+- [Detailed Explanation](https://www.youtube.com/watch?v=yOb0BL-84h8)
 
 - [Space Complexity of Algorithms - How to Calculate Space Complexity of Algorithms in Data Structures
 ](https://www.youtube.com/watch?v=yOb0BL-84h8)
@@ -51,7 +61,7 @@ Auxiliary Space : is the temporary space (excluding the input size) allocated by
 
 Space complexity includes both Auxiliary space and space used by input.
 
-`Space Complexity = Input Size + Auxiliary space`
+​		=> `Space Complexity = Input Size + Auxiliary space`
 
 How to approach leetcode problems:
 
@@ -73,8 +83,10 @@ How to use Cracking The Coding Interview (CTCI) book:
 - https://www.quora.com/How-useful-is-Cracking-the-Coding-Interview-book-while-appearing-for-technical-interviews-of-companies-like-Google-Facebook-Amazon-etc
 
 Heap Sort:
-- Time complexity analysis: http://www.cs.toronto.edu/~krueger/cscB63h/lectures/tut02.txt
-- Introduction: https://www.programiz.com/dsa/heap-sort
+- Time complexity analysis:
+  - http://www.cs.toronto.edu/~krueger/cscB63h/lectures/tut02.txt
+- Introduction:
+  - https://www.programiz.com/dsa/heap-sort
 - Building MaxHeap time complexity is `O(n)`:
   - https://www.youtube.com/watch?v=XZ_Beap6Vo0
   - https://www.youtube.com/watch?v=HI97KDV23Ig
