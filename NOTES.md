@@ -32,7 +32,7 @@ How to pick best questions for interviews in GFG and LC:
 
 - https://www.youtube.com/watch?v=HYK5lpkKBPo
 
-# My Notes
+# Miscellaneous 
 
 Space Complexity:
 
