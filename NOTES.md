@@ -32,6 +32,10 @@ https://www.youtube.com/watch?v=HYK5lpkKBPo
 
 **Space Complexity:** [Detailed Explanation](https://www.youtube.com/watch?v=yOb0BL-84h8)
 
+- [Space Complexity of Algorithms - How to Calculate Space Complexity of Algorithms in Data Structures
+](https://www.youtube.com/watch?v=yOb0BL-84h8)
+- [Space complexity short definitions](https://www.geeksforgeeks.org/g-fact-86/)
+
 The space complexity of an algorithm or a computer program is the amount of memory space required to solve an instance of the computational problem as a function of the size of the input.
 
 Simple words : It is the memory required by an algorithm to execute a program and produce output. Similar to time complexity, Space complexity is often expressed asymptotically in big O notation, such as O(n), O(nlog(n)), O(n^2) etc., where n is the input size in units of bits needed to represent the input.
@@ -48,14 +52,6 @@ Auxiliary Space : is the temporary space (excluding the input size) allocated by
 Space complexity includes both Auxiliary space and space used by input.
 
 `Space Complexity = Input Size + Auxiliary space`
-
----
-
-Space complexity:
-
-- [Space Complexity of Algorithms - How to Calculate Space Complexity of Algorithms in Data Structures
-](https://www.youtube.com/watch?v=yOb0BL-84h8)
-- [Space complexity short definitions](https://www.geeksforgeeks.org/g-fact-86/)
 
 How to approach leetcode problems:
 
