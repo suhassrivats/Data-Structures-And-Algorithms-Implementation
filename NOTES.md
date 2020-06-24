@@ -16,10 +16,6 @@ Strategy to use LC for Cracking Coding Interviews Effectively:
 
 - https://www.youtube.com/watch?v=q15JgVVLXQg
 
-CTCI vs EPI:
-
-- https://www.reddit.com/r/cscareerquestions/comments/4xel2x/ctci_vs_epi/
-
 Facebook:
 
 - https://leetcode.com/discuss/general-discussion/675445/facebook-interview-experiences-all-combined-from-lc-till-date-07-jun-2020
@@ -82,7 +78,12 @@ How to use Cracking The Coding Interview (CTCI) book:
 
 - https://www.quora.com/How-useful-is-Cracking-the-Coding-Interview-book-while-appearing-for-technical-interviews-of-companies-like-Google-Facebook-Amazon-etc
 
+CTCI vs EPI:
+
+- https://www.reddit.com/r/cscareerquestions/comments/4xel2x/ctci_vs_epi/
+
 Heap Sort:
+
 - Time complexity analysis:
   - http://www.cs.toronto.edu/~krueger/cscB63h/lectures/tut02.txt
 - Introduction:
@@ -92,4 +93,5 @@ Heap Sort:
   - https://www.youtube.com/watch?v=HI97KDV23Ig
 
 Tries:
+
 - [Trying to Understand Tries](https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014)
