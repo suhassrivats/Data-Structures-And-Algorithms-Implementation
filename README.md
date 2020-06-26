@@ -31,14 +31,12 @@
 
 ## Algorithms
 
-1. Recursion
-   - Implement Recursion Algorithms listed in [CodingBat](https://codingbat.com/)
-2. Sorting
+1. Sorting
    - Selection Sort
 
 ## Problems
 
-1. CodingBat - Recursion
+1. CodingBat - Implement Recursion Algorithms listed in [CodingBat](https://codingbat.com/)
 2. GeeksForGeeks
 3. LeetCode
 4. CTCI
