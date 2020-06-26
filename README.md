@@ -36,8 +36,9 @@
 2. Sorting
    - Selection Sort
 
-## Other Problems
+## Problems
 
-1. GeeksForGeeks
-2. LeetCode
-3. CTCI
+1. CodingBat - Recursion
+2. GeeksForGeeks
+3. LeetCode
+4. CTCI
