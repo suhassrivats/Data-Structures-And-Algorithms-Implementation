@@ -35,3 +35,9 @@
    - Implement Recursion Algorithms listed in [CodingBat](https://codingbat.com/)
 2. Sorting
    - Selection Sort
+
+## Other Problems
+
+1. GeeksForGeeks
+2. LeetCode
+3. CTCI
