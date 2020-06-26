@@ -10,7 +10,7 @@ class Solution:
             mid_index = (left + right) // 2
             mid_element = nums[mid_index]
 
-            if nums[mid_index] == target:
+            if mid_element == target:
                 return mid_index
             elif target < nums[mid_index]:
                 right = mid_index - 1
