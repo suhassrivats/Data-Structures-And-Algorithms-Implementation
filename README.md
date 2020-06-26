@@ -31,7 +31,7 @@
 
 ## Algorithms
 
-1. CodingBat
+1. Recursion
    - Implement Recursion Algorithms listed in [CodingBat](https://codingbat.com/)
 2. Sorting
    - Selection Sort
