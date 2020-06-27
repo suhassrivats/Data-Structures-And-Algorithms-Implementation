@@ -31,7 +31,10 @@
 
 ## Algorithms
 
-1. Sorting
+1. Search
+   - Linear Search
+   - Binary Search
+2. Sorting
    - Selection Sort
 
 ## Problems
