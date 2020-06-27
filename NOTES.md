@@ -4,6 +4,11 @@ Read this before doing LC:
 
 - https://medium.com/@alimirio/before-you-start-solving-problems-on-leetcode-prep-work-9d65fc964c6f
 
+How to approach leetcode problems:
+
+- https://www.youtube.com/watch?v=GbyXxUDVeAo
+- [Optimal Leetcode learning strategy? Struggle or exposure?](https://www.reddit.com/r/cscareerquestions/comments/6rsxbm/optimal_leetcode_learning_strategy_struggle_or/dl971lp/)
+
 Consistent practice advice:
 - https://leetcode.com/discuss/general-discussion/318537/consistent-practice-advice
 - https://news.ycombinator.com/item?id=7930098
@@ -58,11 +63,6 @@ Auxiliary Space : is the temporary space (excluding the input size) allocated by
 Space complexity includes both Auxiliary space and space used by input.
 
 ​		=> `Space Complexity = Input Size + Auxiliary space`
-
-How to approach leetcode problems:
-
-- https://www.youtube.com/watch?v=GbyXxUDVeAo
-- [Optimal Leetcode learning strategy? Struggle or exposure?](https://www.reddit.com/r/cscareerquestions/comments/6rsxbm/optimal_leetcode_learning_strategy_struggle_or/dl971lp/)
 
 Huffman coding:
 
