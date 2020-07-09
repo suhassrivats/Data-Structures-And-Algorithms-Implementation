@@ -37,7 +37,11 @@ How to pick best questions for interviews in GFG and LC:
 
 - https://www.youtube.com/watch?v=HYK5lpkKBPo
 
-# Miscellaneous 
+Google Interview questions list | Jan 2020 - Jun 2020:
+
+- https://leetcode.com/discuss/general-discussion/726900/google-interview-questions-list-jan-2020-jun-2020
+
+# Miscellaneous
 
 Space Complexity:
 
