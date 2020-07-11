@@ -24,10 +24,13 @@
 5. Deque
    - Implementation
      - Using DynamicArrays/Lists
-6. Trees
+6. Hashes
+   - Implementation of HashSet
+   - Implementation of HashMap
+7. Trees
    - Implementation
      - Binary Tree
-7. Graphs
+8. Graphs
 
 ## Algorithms
 
