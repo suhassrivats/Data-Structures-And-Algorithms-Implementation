@@ -20,7 +20,7 @@ class MyHashMap:
         new_node = LinkedListNode(key, value)
         head = self.bucket_array[bucket_index]
 
-        # check if key is already present in the map, and update it's value
+        # check if key is already present in the chain, and update it's value
         while head is not None:
             if head.key == key:
                 head.value = value
