@@ -8,7 +8,6 @@
    - Implementation
      - Singly Linked List
      - Doubly Linked List
-     - Circular Linked List
 3. Stacks
    - Implementation
      - Using Array
@@ -25,8 +24,9 @@
    - Implementation
      - Using DynamicArrays/Lists
 6. Hashes
-   - Implementation of HashSet
-   - Implementation of HashMap
+   - Implementation
+     - HashSet
+     - HashMap
 7. Trees
    - Implementation
      - Binary Tree
