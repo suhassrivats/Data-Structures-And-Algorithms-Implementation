@@ -8,6 +8,8 @@
 # I found out that pre-order traversal is root-left-right, and post order is
 # left-right-root. I modified the code for pre-order a little to make it
 # root-right-left, and then reverse the output.
+
+# Iterative
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
         """
@@ -26,3 +28,11 @@ class Solution:
                     stack.append(node.right)
 
         return results[::-1]
+
+
+# Recursive
+class Solution:
+    def postorderTraversal(self, root: TreeNode) -> List[int]:
+        if root is None:
+            return []
+        return self.postorderTraversal(root.left) + self.postorderTraversal(root.right) + [root.val]

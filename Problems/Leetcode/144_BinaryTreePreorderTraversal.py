@@ -5,6 +5,7 @@
 #         self.left = left
 #         self.right = right
 
+# Iterative
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         """
@@ -26,3 +27,11 @@ class Solution:
                     stack.append(node.left)
 
         return results
+
+
+# Recursive
+class Solution:
+    def preorderTraversal(self, root: TreeNode) -> List[int]:
+        if root is None:
+            return []
+        return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right)

@@ -5,6 +5,8 @@
 #         self.left = left
 #         self.right = right
 
+
+# Iterative
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         """
@@ -24,3 +26,11 @@ class Solution:
             root = root.right
 
         return results
+
+
+# Recursive
+class Solution:
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
+        if root is None:
+            return []
+        return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
