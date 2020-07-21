@@ -6,10 +6,7 @@
 #         self.right = right
 
 
-<<<<<<< HEAD
 # Recursive
-=======
->>>>>>> e8ee43f78010fee53d62cc2e08a0cedfa5c252f0
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         if root is None:
@@ -31,10 +28,7 @@ class Solution:
             return False
 
 
-<<<<<<< HEAD
 # Iterative
-=======
->>>>>>> e8ee43f78010fee53d62cc2e08a0cedfa5c252f0
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         if root is None:
