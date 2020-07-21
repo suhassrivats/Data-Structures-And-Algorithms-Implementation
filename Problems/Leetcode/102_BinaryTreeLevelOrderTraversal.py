@@ -1,3 +1,4 @@
+# Level order is Breadth First traversal
 from collections import deque
 
 # Definition for a binary tree node.
