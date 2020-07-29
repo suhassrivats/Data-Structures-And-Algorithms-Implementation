@@ -28,8 +28,12 @@
      - HashSet
      - HashMap
 7. Trees
-   - Implementation
-     - Binary Tree
+    - Binary Tree
+      - Depth First Traversals
+        - PreOrder
+        - InOrder
+        - PostOrder
+      - Breadth First (Level Order) Traversal
 8. Graphs
 
 ## Algorithms
