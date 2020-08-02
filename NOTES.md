@@ -99,3 +99,11 @@ Heap Sort:
 Tries:
 
 - [Trying to Understand Tries](https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014)
+
+How to use GFG:
+
+- https://www.youtube.com/watch?v=07QCAJYolaE
+
+Trees:
+
+- [When is it practical to use DFS vs BFS](https://stackoverflow.com/questions/3332947/when-is-it-practical-to-use-depth-first-search-dfs-vs-breadth-first-search-bf)

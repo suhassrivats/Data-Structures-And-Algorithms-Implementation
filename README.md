@@ -43,6 +43,8 @@
    - Binary Search
 2. Sorting
    - Selection Sort
+   - Merge Sort (divide-and-conquer)
+   - Quick Sort (divide-and-conquer)
 
 ## Problems
 
