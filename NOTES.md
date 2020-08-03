@@ -41,6 +41,9 @@ Google Interview questions list | Jan 2020 - Jun 2020:
 
 - https://leetcode.com/discuss/general-discussion/726900/google-interview-questions-list-jan-2020-jun-2020
 
+Inspiration:
+- https://leetcode.com/discuss/interview-question/765743/6-months-of-hard-work-and-finally-offer-from-facebook
+
 # Miscellaneous
 
 Space Complexity:
