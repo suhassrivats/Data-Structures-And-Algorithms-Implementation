@@ -1,3 +1,5 @@
+# Reference: https://medium.com/@amirziai/merge-sort-walkthrough-with-code-in-python-e4f76d90a4ea
+
 class Solution:
     def sortArray(self, nums):
         return self.merge_sort(nums)
