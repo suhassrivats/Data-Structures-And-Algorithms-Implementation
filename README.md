@@ -34,6 +34,10 @@
         - InOrder
         - PostOrder
       - Breadth First (Level Order) Traversal
+    - Binary Search Tree (BST)
+      - Search
+      - Insert
+      - Delete
 8. Graphs
 
 ## Algorithms
