@@ -45,7 +45,9 @@
         - Inorder (Not implemented)
             - There is no standard definition for in-order traversal in n-ary trees. It probably only makes sense for binary trees. While there are several different possible ways that one could define in-order traversal for n-ary trees, each of those feels a bit odd and unnatural and probably not terribly useful in practice.
       - Breadth First (Level Order) Traversal
-8. Graphs
+8. Trie (Prefix Tree)
+    - Implementation
+9. Graphs
 
 ## Algorithms
 
