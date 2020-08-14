@@ -114,3 +114,6 @@ Inspiration:
 
 Recursion:
 - [Mater recursion - Coding Ninjas](https://www.youtube.com/watch?v=O7IkZN1kAFQ)
+
+BinarySearch:
+- [Python - Powerful Ultimate Binary Search Template. Solved many problems](https://leetcode.com/discuss/general-discussion/786126/python-powerful-ultimate-binary-search-template-solved-many-problems)
