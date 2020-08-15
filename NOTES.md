@@ -110,10 +110,22 @@ Trees:
 - [When is it practical to use DFS vs BFS](https://stackoverflow.com/questions/3332947/when-is-it-practical-to-use-depth-first-search-dfs-vs-breadth-first-search-bf)
 
 Inspiration:
+
 - https://leetcode.com/discuss/interview-question/765743/6-months-of-hard-work-and-finally-offer-from-facebook
 
 Recursion:
+
 - [Mater recursion - Coding Ninjas](https://www.youtube.com/watch?v=O7IkZN1kAFQ)
 
 BinarySearch:
+
 - [Python - Powerful Ultimate Binary Search Template. Solved many problems](https://leetcode.com/discuss/general-discussion/786126/python-powerful-ultimate-binary-search-template-solved-many-problems)
+
+Graphs:
+
+- [Introduction](https://www.youtube.com/watch?v=gXgEDyodOJU)
+- [Properties](https://www.youtube.com/watch?v=AfYqN3fGapc)
+
+Heaps:
+
+- [Heap - Heap Sort - Heapify - Priority Queues](https://www.youtube.com/watch?v=HqPJF2L5h9U&t=1125s)

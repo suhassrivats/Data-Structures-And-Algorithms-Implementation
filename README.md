@@ -47,7 +47,9 @@
       - Breadth First (Level Order) Traversal
 8. Trie (Prefix Tree)
     - Implementation
-9. Graphs
+9. Heaps
+    - Implementation
+10. Graphs
 
 ## Algorithms
 
