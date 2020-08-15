@@ -20,6 +20,7 @@ class Solution:
             return min_length
 
 
+# Sliding window
 class Solution:
     """
     Time complexity: O(n)
@@ -28,19 +29,21 @@ class Solution:
     """
 
     def minSubArrayLen(self, s: int, nums: List[int]) -> int:
-        min_length = len(nums) + 100
-        total = 0
-        left = 0
-
-        for right, num in enumerate(nums):
-            total += num
-
-            while total >= s:
-                min_length = min(min_length, right-left+1)
-                total -= nums[left]
-                left += 1
-
-        if min_length <= len(nums):
-            return min_length
-        else:
+        if not nums:
             return 0
+
+        window_start = 0
+        window_sum = 0
+        min_length = len(nums) + 1000
+
+        for window_end in range(len(nums)):
+            window_sum += nums[window_end]
+            while window_sum >= s:
+                min_length = min(min_length, (window_end-window_start+1))
+                window_sum -= nums[window_start]
+                window_start += 1
+
+        if min_length == len(nums) + 1000:
+            return 0
+        else:
+            return min_length
