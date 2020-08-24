@@ -13,7 +13,7 @@ Given that the input array is sorted, an efficient way would be to start with on
 
 Here is the visual representation of this algorithm:
 
-![Two Pointer Introduction](https://github.com/suhassrivats/Data-Structures-And-Algorithms-Implementation/tree/master/Problems/Grokking/images/two_pointer_intro.PNG)
+![Two Pointer Introduction](https://github.com/suhassrivats/Data-Structures-And-Algorithms-Implementation/blob/master/Problems/Grokking/images/two_pointer_intro.PNG)
 
 The time complexity of the above algorithm will be `O(N)`
 
