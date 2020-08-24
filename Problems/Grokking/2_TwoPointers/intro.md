@@ -13,11 +13,9 @@ Given that the input array is sorted, an efficient way would be to start with on
 
 Here is the visual representation of this algorithm:
 
-![image-20200824004134843](C:\Users\subburat\AppData\Roaming\Typora\typora-user-images\image-20200824004134843.png)
+![Two Pointer Introduction](https://github.com/suhassrivats/Data-Structures-And-Algorithms-Implementation/tree/master/Problems/Grokking/images/two_pointer_intro.PNG)
 
 The time complexity of the above algorithm will be `O(N)`
-
-
 
 Source: 
 
