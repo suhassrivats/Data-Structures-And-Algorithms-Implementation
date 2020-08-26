@@ -130,3 +130,8 @@ Graphs:
 Heaps:
 
 - [Heap - Heap Sort - Heapify - Priority Queues](https://www.youtube.com/watch?v=HqPJF2L5h9U&t=1125s)
+
+
+# Object Oriented Programming in Python
+- [Encapsulation, Data Abstraction, Polymorphism, Inheritance](https://www.python-course.eu/object_oriented_programming.php)
+- [public, private and protected](https://www.tutorialsteacher.com/python/private-and-protected-access-modifiers-in-python)
