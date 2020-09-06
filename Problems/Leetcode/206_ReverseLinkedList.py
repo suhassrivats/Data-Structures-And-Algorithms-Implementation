@@ -12,12 +12,11 @@ class Solution:
             Original:      1->2->3->4->None
             Output:  None<-1<-2<-3<-4
         """
-        prev = None
-
-        while head:
-            next_node = head.next
-            head.next = prev
-            prev = head
-            head = next_node
-
-        return prev
+        previous, next_node = None, None
+        current = head
+        while current:
+            next_node = current.next  # temporarily store the next pointer
+            current.next = previous  # reverse the current node
+            previous = current  # before we move to the next node, point previous to the current node
+            current = next_node  # move on the next node
+        return previous
