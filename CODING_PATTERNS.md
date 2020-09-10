@@ -1,41 +1,65 @@
 # CODING PATTERNS
 
-| PROBLEM  NAMES                                  | PROBLEM # | DATE OF LAST ATTEMPT | USEFUL INFORMATION                          | HINTS AND OTHER NOTES                                  |
-| ----------------------------------------------- | --------- | -------------------- | ------------------------------------------- | ------------------------------------------------------ |
-|                                                 |           |                      |                                             |                                                        |
-| **SLIDING  WINDOW**                             |           |                      |                                             |                                                        |
-| Maximum  Average Subarray I                     | LC-643    | 8/14/2020            |                                             |                                                        |
-| Minimum Size  Subarray Sum                      | LC-209    | 8/14/2020            |                                             |                                                        |
-| Longest  Substring with K Distinct Characters   | LC-340    | 8/14/2020            |                                             | Longest Substring  with K Distinct Characters          |
-| Fruits into  Baskets                            | LC-904    | 8/15/2020            |                                             |                                                        |
-| Longest  Substring Without Repeating Characters | LC-3      | 8/17/2020            |                                             | No-repeat Substring                                    |
-| Longest  Repeating Character Replacement        | LC-424    | 8/22/2020            |                                             | Longest Substring  with Same Letters after Replacement |
-| Max  Consecutive Ones III                       | LC-1004   | 8/22/2020            |                                             | Longest Subarray with  Ones after Replacement          |
-| Permutation  in String                          | LC-567    | 8/23/2020            |                                             |                                                        |
-| Find All  Anagrams in a String                  | LC-438    | 8/23/2020            |                                             | String Anagrams                                        |
-| Minimum  Window Substring                       | LC-76     | 8/23/2020            |                                             | Smallest Window  containing Substring                  |
-| Concatenated  Words                             | LC-472    |                      |                                             |                                                        |
-| **TWO  POINTERS**                               |           |                      |                                             |                                                        |
-| Remove  Duplicates from Sorted Array            | LC-26     | 8/24/2020            |                                             | Pair with Target Sum                                   |
-| Squares of a  Sorted Array                      | LC-977    | 8/24/2020            |                                             | Remove Duplicates                                      |
-| 3Sum                                            | LC-15     | 8/27/2020            |                                             | Triplet Sum to Zero                                    |
-| 3Sum Closest                                    | LC-16     | 8/27/2020            |                                             | Triplet Sum Close to  Target                           |
-| 3Sum Smaller                                    | LC-259    | 8/27/2020            |                                             |                                                        |
-| Subarray  Product Less Than K                   | LC-713    | 8/30/2020            |                                             | Subarrays with  Product Less than a Target             |
-| Sort Colors                                     | LC-75     | 8/30/2020            |                                             | Dutch National Flag  Problem                           |
-| 4Sum                                            | LC-18     | 8/30/2020            | https://www.youtube.com/watch?v=ozC7E-f4aNY | Quadruple Sum to  Target                               |
-| Backspace  String Compare                       | LC-844    | 8/30/2020            |                                             | Comparing Strings  containing Backspaces               |
-| Shortest  Unsorted Continuous Subarray          | LC-581    | 8/30/2020            |                                             | Minimum Window Sort                                    |
-| **FAST AND  SLOW POINTERS**                     |           |                      |                                             |                                                        |
-| Linked List  Cycle                              | LC-141    | 8/31/2020            |                                             | LinkedList Cycle                                       |
-| Find the  length of the cycle in LinkedList     |           |                      | Not a LC problem.  Check in Grokking folder |                                                        |
-| Linked List  Cycle II                           | LC-142    | 8/31/2020            |                                             | Start of Linked List                                   |
-| Happy Number                                    | LC-202    | 8/31/2020            |                                             |                                                        |
-| Middle of the  Linked List                      | LC-876    | 8/31/2020            |                                             |                                                        |
-| Palindrome  Linked List                         | LC-234    | 8/31/2020            |                                             |                                                        |
-| Reorder List                                    | LC-143    | 8/31/2020            |                                             | Rearrange a linked  list                               |
-| Circular  Array Loop                            | LC-457    |                      |                                             | Cycle in a Circular  Array                             |
-| **MERGE  INTERVALS**                            |           |                      |                                             |                                                        |
-| Merge  Intervals                                | LC-56     | 9/2/2020             |                                             |                                                        |
-| Insert  Interval                                | LC-57     | 9/2/2020             |                                             |                                                        |
-| Interval List  Intersections                    | LC-986    | 9/2/2020             |                                             | Intervals  Intersection                                |
+| PROBLEM  NAMES                                  | PROBLEM # | DATE OF LAST ATTEMPT | USEFUL INFORMATION                                       | HINTS AND OTHER NOTES                                  |
+| ----------------------------------------------- | --------- | -------------------- | -------------------------------------------------------- | ------------------------------------------------------ |
+|                                                 |           |                      |                                                          |                                                        |
+| **SLIDING  WINDOW**                             |           |                      |                                                          |                                                        |
+| Maximum  Average Subarray I                     | LC-643    | 8/14/2020            |                                                          |                                                        |
+| Minimum Size  Subarray Sum                      | LC-209    | 8/14/2020            |                                                          |                                                        |
+| Longest  Substring with K Distinct Characters   | LC-340    | 8/14/2020            |                                                          | Longest Substring  with K Distinct Characters          |
+| Fruits into  Baskets                            | LC-904    | 8/15/2020            |                                                          |                                                        |
+| Longest  Substring Without Repeating Characters | LC-3      | 8/17/2020            |                                                          | No-repeat Substring                                    |
+| Longest  Repeating Character Replacement        | LC-424    | 8/22/2020            |                                                          | Longest Substring  with Same Letters after Replacement |
+| Max  Consecutive Ones III                       | LC-1004   | 8/22/2020            |                                                          | Longest Subarray with  Ones after Replacement          |
+| Permutation  in String                          | LC-567    | 8/23/2020            |                                                          |                                                        |
+| Find All  Anagrams in a String                  | LC-438    | 8/23/2020            |                                                          | String Anagrams                                        |
+| Minimum  Window Substring                       | LC-76     | 8/23/2020            |                                                          | Smallest Window  containing Substring                  |
+| Concatenated  Words                             | LC-472    |                      |                                                          |                                                        |
+| **TWO  POINTERS**                               |           |                      |                                                          |                                                        |
+| Remove  Duplicates from Sorted Array            | LC-26     | 8/24/2020            |                                                          | Pair with Target Sum                                   |
+| Squares of a  Sorted Array                      | LC-977    | 8/24/2020            |                                                          | Remove Duplicates                                      |
+| 3Sum                                            | LC-15     | 8/27/2020            |                                                          | Triplet Sum to Zero                                    |
+| 3Sum Closest                                    | LC-16     | 8/27/2020            |                                                          | Triplet Sum Close to  Target                           |
+| 3Sum Smaller                                    | LC-259    | 8/27/2020            |                                                          |                                                        |
+| Subarray  Product Less Than K                   | LC-713    | 8/30/2020            |                                                          | Subarrays with  Product Less than a Target             |
+| Sort Colors                                     | LC-75     | 8/30/2020            |                                                          | Dutch National Flag  Problem                           |
+| 4Sum                                            | LC-18     | 8/30/2020            | https://www.youtube.com/watch?v=ozC7E-f4aNY              | Quadruple Sum to  Target                               |
+| Backspace  String Compare                       | LC-844    | 8/30/2020            |                                                          | Comparing Strings  containing Backspaces               |
+| Shortest  Unsorted Continuous Subarray          | LC-581    | 8/30/2020            |                                                          | Minimum Window Sort                                    |
+| **FAST AND  SLOW POINTERS**                     |           |                      |                                                          |                                                        |
+| Linked List  Cycle                              | LC-141    | 8/31/2020            |                                                          | LinkedList Cycle                                       |
+| Find the  length of the cycle in LinkedList     |           |                      | Not a LC problem.  Check in Grokking folder              |                                                        |
+| Linked List  Cycle II                           | LC-142    | 8/31/2020            |                                                          | Start of Linked List                                   |
+| Happy Number                                    | LC-202    | 8/31/2020            |                                                          |                                                        |
+| Middle of the  Linked List                      | LC-876    | 8/31/2020            |                                                          |                                                        |
+| Palindrome  Linked List                         | LC-234    | 8/31/2020            |                                                          |                                                        |
+| Reorder List                                    | LC-143    | 8/31/2020            |                                                          | Rearrange a linked  list                               |
+| Circular  Array Loop                            | LC-457    |                      |                                                          | Cycle in a Circular  Array                             |
+| **MERGE  INTERVALS**                            |           |                      |                                                          |                                                        |
+| Merge  Intervals                                | LC-56     | 9/2/2020             |                                                          |                                                        |
+| Insert  Interval                                | LC-57     | 9/2/2020             |                                                          |                                                        |
+| Interval List  Intersections                    | LC-986    | 9/3/2020             | https://blog.csdn.net/danspace1/article/details/86076499 | Intervals  Intersection                                |
+| **CYCLIC  SORT**                                |           |                      |                                                          |                                                        |
+| Cyclic Sort                                     |           | 9/3/2020             | Not a LC problem.  Just an introductory one.             |                                                        |
+| Missing  Number                                 | LC-268    | 9/3/2020             |                                                          | Find the Missing  Number                               |
+| Find All  Numbers Disappeared in an Array       | LC-448    | 9/3/2020             |                                                          | Find all missing  numbers                              |
+| Find the duplicate number                       | LC-287    | 9/3/2020             |                                                          | Find the duplicate  number                             |
+| Find All Duplicates in an  Array                | LC-442    | 9/3/2020             |                                                          | Find all Duplicate  Numbers                            |
+| Find the  corrupt pair                          |           |                      | Not a LC problem.  Check in Grokking folder              |                                                        |
+| First Missing  Positive                         | LC-41     | 9/4/2020             |                                                          | Find the Smallest  Missing Positive Number             |
+| Find the  First K Missing Positive Numbers      |           |                      | Not a LC problem.  Check in Grokking folder              |                                                        |
+| **IN-PLACE  REVERSAL OF A LINKED LIST**         |           |                      |                                                          |                                                        |
+| Reverse  Linked List                            | LC-206    | 9/6/2020             |                                                          |                                                        |
+| Reverse a  Sub-list                             | LC-92     | 9/6/2020             |                                                          | Reverse a Sub-list                                     |
+| Reverse Nodes  in k-Group                       | LC-25     |                      |                                                          |                                                        |
+| Rotate List                                     | LC-61     | 9/7/2020             |                                                          | Rotate a LinkedList                                    |
+| **TREE  BREADTH FIRST SEARCH**                  |           |                      |                                                          |                                                        |
+| Binary Tree  Level Order Traversal              | LC-102    | 9/7/2020             |                                                          | Binary Tree Level  Order Traversal                     |
+| Binary Tree  Level Order Traversal II           | LC-107    | 9/7/2020             |                                                          | Reverse Level Order  Traversal                         |
+| Binary Tree  Zigzag Level Order Traversal       | LC-103    | 9/8/2020             |                                                          | Zigzag Traversal                                       |
+| Average of  Levels in Binary Tree               | LC-637    | 9/8/2020             |                                                          | Level Averages in a  Binary Tree                       |
+| Minimum Depth  of Binary Tree                   | LC-111    | 9/8/2020             |                                                          |                                                        |
+| Level Order  Successor                          |           | 9/9/2020             | Not a LC problem.  Check in Grokking folder              |                                                        |
+| Populating  Next Right Pointers in Each Node    | LC-116    | 9/9/2020             |                                                          | Connect Level Order  Siblings                          |
+| Connect All  Level Order Siblings               |           | 9/9/2020             | Not a LC problem.  Check in Grokking folder              |                                                        |
+| Binary Tree  Right Side View                    | LC-199    | 9/9/2020             |                                                          | Right View of a Binary Tree                            |
