@@ -131,6 +131,10 @@ Heaps:
 
 - [Heap - Heap Sort - Heapify - Priority Queues](https://www.youtube.com/watch?v=HqPJF2L5h9U&t=1125s)
 
+How to crack Amazon Coding Interview:
+
+- https://medium.com/@rachit138/how-i-cleared-the-amazon-sde-2-interview-f82a33706ff4
+
 
 # Object Oriented Programming in Python
 - [Encapsulation, Data Abstraction, Polymorphism, Inheritance](https://www.python-course.eu/object_oriented_programming.php)
