@@ -49,8 +49,8 @@
     - Implementation
 9. Heaps
     - Implementation
-     - Min Heap
-     - Max Heap
+        - Min Heap
+        - Max Heap
 10. Graphs
 
 ## Algorithms
@@ -60,8 +60,8 @@
    - Binary Search
 2. Sorting
    - Selection Sort
-   - Merge Sort (divide-and-conquer)
-   - Quick Sort (divide-and-conquer)
+     - Merge Sort (divide-and-conquer)
+     - Quick Sort (divide-and-conquer)
 
 ## Problems
 
