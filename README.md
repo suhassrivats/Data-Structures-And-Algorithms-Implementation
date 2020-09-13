@@ -49,6 +49,8 @@
     - Implementation
 9. Heaps
     - Implementation
+     - Min Heap
+     - Max Heap
 10. Graphs
 
 ## Algorithms
