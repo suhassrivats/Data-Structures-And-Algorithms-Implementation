@@ -87,6 +87,10 @@ CTCI vs EPI:
 
 - https://www.reddit.com/r/cscareerquestions/comments/4xel2x/ctci_vs_epi/
 
+Heaps:
+
+- [Heap - Heap Sort - Heapify - Priority Queues](https://www.youtube.com/watch?v=HqPJF2L5h9U&t=1125s)
+
 Heap Sort:
 
 - Time complexity analysis:
@@ -126,10 +130,6 @@ Graphs:
 
 - [Introduction](https://www.youtube.com/watch?v=gXgEDyodOJU)
 - [Properties](https://www.youtube.com/watch?v=AfYqN3fGapc)
-
-Heaps:
-
-- [Heap - Heap Sort - Heapify - Priority Queues](https://www.youtube.com/watch?v=HqPJF2L5h9U&t=1125s)
 
 How to crack Amazon Coding Interview:
 
