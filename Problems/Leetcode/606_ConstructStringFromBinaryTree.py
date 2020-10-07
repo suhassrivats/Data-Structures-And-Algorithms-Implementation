@@ -64,3 +64,28 @@ class Solution:
             # mapping relationship between the input and the output.
             # Input: Binary tree: [1,2,3,null,4]; Output: "1(2()(4))(3)"
             return str(t.val)+"("+left_string+")"+"("+right_string+")"
+
+
+# Iterative
+class Solution:
+    def tree2str(self, t: TreeNode) -> str:
+        if not t:
+            return ""
+        stack = []
+        stack.append(t)
+        result = ""
+        while stack:
+            node = stack.pop()
+            if node == ')':
+                result += ')'
+                continue
+            result += "("+str(node.val)
+            if not node.left and node.right:
+                result += "()"
+            if node.right:
+                stack.append(")")
+                stack.append(node.right)
+            if node.left:
+                stack.append(")")
+                stack.append(node.left)
+        return result[1:]
