@@ -21,7 +21,7 @@ class Solution:
             each node only once.
 
         Space Complexity: O(n). In the worst case it can be a skewed tree. So we
-            might have to store all the elements in the stack. 
+            might have to store all the elements in the stack.
         """
         if not preorder:
             return None
@@ -40,4 +40,18 @@ class Solution:
                 last.right = new_node
                 stack.append(last.right)
 
+        return root
+
+
+# Recursive
+class Solution:
+    def bstFromPreorder(self, preorder: List[int]) -> TreeNode:
+        if not preorder:
+            return None
+        root = TreeNode(preorder[0])
+        i = 1
+        while i < len(preorder) and preorder[i] < root.val:
+            i += 1
+        root.left = self.bstFromPreorder(preorder[1:i])
+        root.right = self.bstFromPreorder(preorder[i:])
         return root
