@@ -9,9 +9,9 @@
 class Solution:
     """
     Complexity Analysis:
-        Time Complexity: O(N), where NN is the number of nodes in the tree. We
+        Time Complexity: O(N), where N is the number of nodes in the tree. We
             process each node once.
-        Space Complexity: O(H), where HH is the height of the tree. This
+        Space Complexity: O(H), where H is the height of the tree. This
             represents the size of the implicit call stack in our recursion.
     """
 
