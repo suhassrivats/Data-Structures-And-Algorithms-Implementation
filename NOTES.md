@@ -148,6 +148,7 @@ Sliding Window:
 - [How to Solve Sliding Window Problems](https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66)
 
 Two Pointer Technique:
+
 In problems where we deal with sorted arrays (or LinkedLists) and need to find a set of elements that fulfill certain constraints, the Two Pointers approach becomes quite useful. The set of elements could be a pair, a triplet or even a subarray.
 
 - [Introduction](https://www.geeksforgeeks.org/two-pointers-technique/)
