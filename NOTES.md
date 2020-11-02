@@ -139,3 +139,16 @@ How to crack Amazon Coding Interview:
 # Object Oriented Programming in Python
 - [Encapsulation, Data Abstraction, Polymorphism, Inheritance](https://www.python-course.eu/object_oriented_programming.php)
 - [public, private and protected](https://www.tutorialsteacher.com/python/private-and-protected-access-modifiers-in-python)
+
+
+# Coding Patterns
+
+Sliding Window:
+- [An Introduction to Sliding Window Algorithms](https://levelup.gitconnected.com/an-introduction-to-sliding-window-algorithms-5533c4fe1cc7)
+- [How to Solve Sliding Window Problems](https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66)
+
+Two Pointer Technique:
+In problems where we deal with sorted arrays (or LinkedLists) and need to find a set of elements that fulfill certain constraints, the Two Pointers approach becomes quite useful. The set of elements could be a pair, a triplet or even a subarray.
+
+- [Introduction](https://www.geeksforgeeks.org/two-pointers-technique/)
+- [Two different approaches of using two-pointer technique](https://afteracademy.com/blog/what-is-the-two-pointer-technique)
