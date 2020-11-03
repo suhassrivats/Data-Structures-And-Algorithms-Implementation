@@ -145,7 +145,7 @@ How to crack Amazon Coding Interview:
 
 Sliding Window:
 
-In many problems dealing with an array (or a LinkedList), we are asked to find or calculate something among all the contiguous subarrays (or sublists) of a given size. Sliding Window technique can be used in such cases.
+In many problems dealing with an array (or a LinkedList or strings), we are asked to find or calculate something among all the contiguous subarrays (or sublists or substrings) of a given size. Sliding Window technique can be used in such cases.
 
 - [An Introduction to Sliding Window Algorithms](https://levelup.gitconnected.com/an-introduction-to-sliding-window-algorithms-5533c4fe1cc7)
 - [How to Solve Sliding Window Problems](https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66)
