@@ -1,7 +1,10 @@
+# Brute Force
 class Solution:
-    # Time complexity: O(n^2)
-    # Space complexity (Auxiliary): O(1)
-    # Status: Time limit exceeded
+    """
+    Time complexity: O(n^2)
+    Space complexity (Auxiliary): O(1)
+    Status: Time limit exceeded
+    """
 
     def minSubArrayLen(self, s: int, nums: List[int]) -> int:
         min_length = len(nums) + 100
@@ -13,6 +16,7 @@ class Solution:
                 if total >= s:
                     min_length = min(min_length, (j-i)+1)
                     break
+            total = 0
 
         if min_length == len(nums) + 100:
             return 0
