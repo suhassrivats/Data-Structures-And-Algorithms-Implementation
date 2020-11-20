@@ -149,12 +149,12 @@ How to crack Amazon Coding Interview:
 
 In many problems dealing with an array (or a LinkedList or strings), we are asked to find or calculate something among all the contiguous subarrays (or sublists or substrings) of a given size. Sliding Window technique can be used in such cases.
 
-- [An Introduction to Sliding Window Algorithms](https://levelup.gitconnected.com/an-introduction-to-sliding-window-algorithms-5533c4fe1cc7)
+- [Introduction to Sliding Window Algorithms](https://levelup.gitconnected.com/an-introduction-to-sliding-window-algorithms-5533c4fe1cc7)
 - [How to Solve Sliding Window Problems](https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66)
 
 **Two Pointers:**
 
 In problems where we deal with sorted arrays (or LinkedLists) and need to find a set of elements that fulfill certain constraints, the Two Pointers approach becomes quite useful. The set of elements could be a pair, a triplet or even a subarray.
 
-- [Introduction](https://www.geeksforgeeks.org/two-pointers-technique/)
+- [Introduction to Two Pointer Technique](https://www.geeksforgeeks.org/two-pointers-technique/)
 - [Two different approaches of using two-pointer technique](https://afteracademy.com/blog/what-is-the-two-pointer-technique)
