@@ -122,7 +122,7 @@ Inspiration:
 
 Recursion:
 
-- [Mater recursion - Coding Ninjas](https://www.youtube.com/watch?v=O7IkZN1kAFQ)
+- [Master recursion - Coding Ninjas](https://www.youtube.com/watch?v=O7IkZN1kAFQ)
 
 BinarySearch:
 
