@@ -44,6 +44,8 @@ Google Interview questions list | Jan 2020 - Jun 2020:
 
 # Miscellaneous
 
+[Complexity of Python Operations](https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt)
+
 Space Complexity:
 
 - [Detailed Explanation](https://www.youtube.com/watch?v=yOb0BL-84h8)
@@ -138,19 +140,19 @@ How to crack Amazon Coding Interview:
 
 # Object Oriented Programming in Python
 - [Encapsulation, Data Abstraction, Polymorphism, Inheritance](https://www.python-course.eu/object_oriented_programming.php)
-- [public, private and protected](https://www.tutorialsteacher.com/python/private-and-protected-access-modifiers-in-python)
+- [Public, Private and Protected](https://www.tutorialsteacher.com/python/private-and-protected-access-modifiers-in-python)
 
 
 # Coding Patterns
 
-1. Sliding Window:
+Sliding Window:
 
 In many problems dealing with an array (or a LinkedList or strings), we are asked to find or calculate something among all the contiguous subarrays (or sublists or substrings) of a given size. Sliding Window technique can be used in such cases.
 
 - [An Introduction to Sliding Window Algorithms](https://levelup.gitconnected.com/an-introduction-to-sliding-window-algorithms-5533c4fe1cc7)
 - [How to Solve Sliding Window Problems](https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66)
 
-2. Two Pointers:
+Two Pointers:
 
 In problems where we deal with sorted arrays (or LinkedLists) and need to find a set of elements that fulfill certain constraints, the Two Pointers approach becomes quite useful. The set of elements could be a pair, a triplet or even a subarray.
 
