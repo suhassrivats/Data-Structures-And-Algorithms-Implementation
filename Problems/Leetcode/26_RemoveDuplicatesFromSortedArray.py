@@ -1,4 +1,11 @@
 class Solution:
+    """
+    Complexity analysis:
+        Time complextiy : O(n). Assume that n is the length of array. Here i
+            traverses once per array
+        Space complexity : O(1)
+    """
+
     def removeDuplicates(self, nums: List[int]) -> int:
         size = 1
 
