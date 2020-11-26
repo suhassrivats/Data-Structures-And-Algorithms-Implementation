@@ -12,13 +12,13 @@ class Solution:
         complexity of the above algorithm will be O(N) which is required for
         sorting.
         """
-        arr.sort()
+        nums.sort()
         triplets = []
 
         for i in range(len(nums)):
             if i > 0 and nums[i] == nums[i-1]:
                 continue  # skip same element to avoid duplicate triplets
-            search_pair(nums, -nums[i], left, triplets)
+            self.search_pair(nums, -nums[i], i+1, triplets)
 
         return triplets
 
