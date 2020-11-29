@@ -18,7 +18,7 @@ class Solution:
         Space complexity (auxiliary): O(1)
         """
 
-        slow = fast = head
+        slow, fast = head, head
         while fast and fast.next:
             # Move fast by 2-steps
             fast = fast.next.next
