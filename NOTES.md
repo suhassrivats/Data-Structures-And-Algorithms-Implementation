@@ -81,6 +81,11 @@ Python Lambda:
 - https://pybit.es/dict-ordering.html
 - https://dbader.org/blog/python-lambda-functions
 
+Python Type Hints:
+
+- https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html#when-you-re-puzzled-or-when-things-are-complicated
+- https://mypy.readthedocs.io/en/stable/getting_started.html
+
 How to use Cracking The Coding Interview (CTCI) book:
 
 - https://www.quora.com/How-useful-is-Cracking-the-Coding-Interview-book-while-appearing-for-technical-interviews-of-companies-like-Google-Facebook-Amazon-etc
