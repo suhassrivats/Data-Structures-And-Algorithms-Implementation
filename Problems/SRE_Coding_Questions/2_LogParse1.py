@@ -69,6 +69,11 @@ def parse_log_and_generate_csv():
     for k, v in time_message_freq.items():
         print('%s,%s' % (k, len(v)))
 
+    # Write output to a CSV file
+    with open("counts.csv", "w") as output_file:
+        for (dt, count) in time_message_freq.items():
+            output_file.write("%s,%s\n" % (dt, len(count)))
+
 
 # Invoke the function
 parse_log_and_generate_csv()
