@@ -32,9 +32,10 @@ Jan 20 05:22,6
 """
 
 #!/usr/bin/python
+import re
 
 
-def parse_log_and_generate_csv():
+def parse_log1():  # Without Regex
     """
     Time Complexity:
         O(n), where n is the number of lines in the log file
@@ -75,5 +76,32 @@ def parse_log_and_generate_csv():
             output_file.write("%s,%s\n" % (dt, len(count)))
 
 
-# Invoke the function
-parse_log_and_generate_csv()
+def parse_log2():  # Using Regex
+    min_msg_freq_map = {}
+    pattern = re.compile(r'^(\w+ \d+ \d+:\d+)\:\d+ \w+ (.*$)')
+    with open('2_var_log_messages.txt', 'r') as file:
+        lines = file.readlines()
+    if len(lines) > 0:
+        for line in lines:
+            match = pattern.match(line)
+            if match:
+                if match.group(0) and match.group(1):
+                    minute, error = match.groups()
+                    min_msg_freq_map[minute] = min_msg_freq_map.get(minute, 0) + 1
+        # Write output to a CSV file
+        with open("counts2.csv", "w") as output_file:
+            for (min, msg_cnt) in min_msg_freq_map.items():
+                output_file.write("%s,%s\n" % (min, msg_cnt))
+                print('%s,%s' % (min, msg_cnt))
+    else:
+        print('File is empty')
+
+
+def main():
+    # Invoke the function
+    # parse_log1()
+    parse_log2()
+
+
+if __name__ == '__main__':
+    main()
