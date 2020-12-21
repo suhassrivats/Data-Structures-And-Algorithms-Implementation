@@ -17,7 +17,6 @@ from collections import defaultdict
 
 
 def parse_log():
-    # output = defaultdict(defaultdict(int))
     output = {}
     all_progs = set()
     pattern = re.compile(r'^(\w+ \d+ \d+:\d+):\d+ \w+ ([\w-]+).*$')
@@ -50,7 +49,7 @@ def parse_log():
                     op += ","
             print(op)
     else:
-        print('File is empty')
+        print('Log file is empty')
 
 
 parse_log()
