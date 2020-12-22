@@ -16,11 +16,11 @@ import re
 from collections import defaultdict
 
 
-def parse_log():
+def parse_log():  # Using Regex
     output = {}
     all_progs = set()
     pattern = re.compile(r'^(\w+ \d+ \d+:\d+):\d+ \w+ ([\w-]+).*$')
-    with open('2_var_log_messages.txt', 'r') as file:
+    with open('logs/messages.txt', 'r') as file:
         lines = file.readlines()
     if len(lines) > 0:
         for line in lines:

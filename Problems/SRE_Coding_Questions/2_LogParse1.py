@@ -51,7 +51,7 @@ def parse_log1():  # Without Regex
     time_message_freq = {}
 
     # Read contents of a file
-    with open('2_var_log_messages.txt', 'r') as file:
+    with open('logs/messages.txt', 'r') as file:
         lines = file.readlines()
 
     # Parse timestamp from each line and store it in a list. Each timestamp is
@@ -79,7 +79,7 @@ def parse_log1():  # Without Regex
 def parse_log2():  # Using Regex
     min_msg_freq_map = {}
     pattern = re.compile(r'^(\w+ \d+ \d+:\d+)\:\d+ \w+ (.*$)')
-    with open('2_var_log_messages.txt', 'r') as file:
+    with open('logs/messages.txt', 'r') as file:
         lines = file.readlines()
     if len(lines) > 0:
         for line in lines:
