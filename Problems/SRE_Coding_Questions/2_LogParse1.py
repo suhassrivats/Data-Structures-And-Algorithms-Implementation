@@ -33,6 +33,7 @@ Jan 20 05:22,6
 
 #!/usr/bin/python
 import re
+from collections import Counter
 
 
 def parse_log1():  # Without Regex
@@ -81,6 +82,7 @@ def parse_log2():  # Using Regex
     pattern = re.compile(r'^(\w+ \d+ \d+:\d+)\:\d+ \w+ (.*$)')
     with open('logs/messages.txt', 'r') as file:
         lines = file.readlines()
+
     if len(lines) > 0:
         for line in lines:
             match = pattern.match(line)
@@ -97,10 +99,21 @@ def parse_log2():  # Using Regex
         print('File is empty')
 
 
+def parse_log3():
+    pattern = re.compile(r'\w+ \d+ \d+:\d+')
+    with open('logs/messages.txt', 'r') as file:
+        total = file.read()
+        times = re.findall(pattern, total)
+        if len(times) > 0:
+            for k, v in Counter(times).items():
+                print('%s,%s' % (k, v))
+
+
 def main():
     # Invoke the function
     # parse_log1()
-    parse_log2()
+    # parse_log2()
+    parse_log3()
 
 
 if __name__ == '__main__':
