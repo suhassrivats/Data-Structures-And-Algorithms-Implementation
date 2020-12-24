@@ -10,6 +10,23 @@ minute,total_count,rsyslogd,cs3,ACCT_ADD
 Jan 20 05:20,1,1,0,0
 Jan 20 05:22,6,0,5,1
 ---------- end sample output ----------
+====== End # QUESTION:  =====
+
+Logic:
+We will try to store the output in a dictionary data structure in this format.
+Here is an example:
+output = {
+    'Jan 20 05:20': {
+        'total_count': 1,
+        'rsyslog': 2,
+        'cs3': 3,}
+    },
+    'Jan 20 05:22': {
+        'total_count': 3,
+        'rsyslog': 1,
+        'cs3': 0,}
+    },
+}
 """
 
 import re
