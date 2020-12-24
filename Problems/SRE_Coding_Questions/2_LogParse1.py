@@ -105,9 +105,9 @@ def parse_log3():
         total = file.read()
         times = re.findall(pattern, total)
         if len(times) > 0:
-            with open("counts3.csv", "w") as output_file:
+            with open('counts3.csv', 'w') as csv_file:
                 for k, v in Counter(times).items():
-                    output_file.write("%s,%s\n" % (k, v))
+                    csv_file.write('%s,%s\n' % (k, v))
                     print('%s,%s' % (k, v))
 
 
