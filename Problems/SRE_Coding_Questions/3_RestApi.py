@@ -37,8 +37,8 @@ def print_hierachy(employee_id, t=0):  # t stands for number of tabs
         print('  '*t, '%s - %s' % (employee_data['name'],
                                    employee_data['title']))
         t += 1
-        for r in employee_data['report']:
-            print_hierachy(r, t)
+        for report_id in employee_data['report']:
+            print_hierachy(report_id, t)
 
 
 # Invoke function calls
