@@ -41,8 +41,27 @@ def print_hierachy(employee_id, t=0):  # t stands for number of tabs
             print_hierachy(report_id, t)
 
 
+def print_hierachy_iterative(employee_id):  # Iterative
+    employee = get_json_response(employee_id)
+    if employee:
+        stack = [(employee, 0)]
+        while stack:
+            employee_data, depth = stack.pop()
+            print('  '*depth, '%s - %s' % (employee_data['name'],
+                                           employee_data['title']))
+            if employee_data['report']:
+                for report_id in employee_data['report']:
+                    stack.append((get_json_response(report_id), depth+1))
+
+
+def get_json_response(employee_id):
+    url = 'https://my-json-server.typicode.com/khaledyousry/api/employee/' + str(employee_id)
+    employee = requests.get(url)
+    if employee.status_code == 200:
+        return employee.json()
+
 # Invoke function calls
-print_hierachy(4343)
+# print_hierachy(4343)
 # print_hierachy(6324)
 # print_hierachy(4224)
 # print_hierachy(9889)
@@ -50,3 +69,15 @@ print_hierachy(4343)
 # print_hierachy(6353)
 # print_hierachy(3524)
 # print_hierachy(7474)
+
+# print('#' * 10)
+
+
+print_hierachy_iterative(4343)
+# print_hierachy_iterative(6324)
+# print_hierachy_iterative(4224)
+# print_hierachy_iterative(9889)
+# print_hierachy_iterative(1234)
+# print_hierachy_iterative(6353)
+# print_hierachy_iterative(3524)
+# print_hierachy_iterative(7474)
