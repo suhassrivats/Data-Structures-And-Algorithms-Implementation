@@ -33,6 +33,8 @@ Jan 20 05:22,6
 
 #!/usr/bin/python
 import re
+import os
+import time
 from collections import Counter
 
 
@@ -111,11 +113,48 @@ def parse_log3():
                     print('%s,%s' % (k, v))
 
 
+########### continuously growing logfile ##############
+def follow(logfile):
+    '''generator function that yields new lines in a file
+    '''
+    # seek the end of the file
+    # 0, it means use the beginning of the file as the reference position
+    # 1 means use the current position as the reference position
+    # 2 means end of the file as reference position (os.SEEK_END)
+    logfile.seek(0, 2)
+    # start infinite loop
+    while True:
+        # read last line of file
+        line = logfile.readline()
+        # sleep if file hasn't been updated
+        if not line:
+            time.sleep(0.1)
+            continue
+        yield line
+
+
+def parse_log4():
+    min_msg_freq_map = {}
+    with open('logs/messages.txt', 'r') as logfile:
+        loglines = follow(logfile)
+        # Regex pattern for time
+        pattern = re.compile(r'^(\w+ \d+ \d+:\d+).*$')
+        # iterate over the generator
+        for line in loglines:
+            match = pattern.match(line)
+            if match:
+                if match.group(0):
+                    minute = match.group(0)
+                    min_msg_freq_map[minute] = min_msg_freq_map.get(minute, 0) + 1
+    print(min_msg_freq_map)
+
+
 def main():
     # Invoke the function
     # parse_log1()
     # parse_log2()
-    parse_log3()
+    # parse_log3()
+    parse_log4()
 
 
 if __name__ == '__main__':
