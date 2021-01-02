@@ -81,6 +81,10 @@ Python Lambda:
 - https://pybit.es/dict-ordering.html
 - https://dbader.org/blog/python-lambda-functions
 
+Python Generators:
+
+- https://realpython.com/introduction-to-python-generators/
+
 Python Type Hints:
 
 - https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html#when-you-re-puzzled-or-when-things-are-complicated
