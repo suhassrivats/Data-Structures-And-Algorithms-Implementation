@@ -29,6 +29,7 @@ Flynn Mackie - Senior VP of Engineering
 import requests
 
 
+# Recursive
 def print_hierachy(employee_id, t=0):  # t stands for number of tabs
     url = 'https://my-json-server.typicode.com/khaledyousry/api/employee/' + str(employee_id)
     employee = requests.get(url)
@@ -41,7 +42,8 @@ def print_hierachy(employee_id, t=0):  # t stands for number of tabs
             print_hierachy(report_id, t)
 
 
-def print_hierachy_iterative(employee_id):  # Iterative
+# Iterative
+def print_hierachy_iterative(employee_id):
     employee = get_json_response(employee_id)
     if employee:
         stack = [(employee, 0)]
@@ -60,7 +62,8 @@ def get_json_response(employee_id):
     if employee.status_code == 200:
         return employee.json()
 
-# Invoke function calls
+
+# Recursive
 # print_hierachy(4343)
 # print_hierachy(6324)
 # print_hierachy(4224)
@@ -72,7 +75,7 @@ def get_json_response(employee_id):
 
 # print('#' * 10)
 
-
+# Iterative
 print_hierachy_iterative(4343)
 # print_hierachy_iterative(6324)
 # print_hierachy_iterative(4224)
