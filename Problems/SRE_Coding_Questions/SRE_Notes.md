@@ -16,10 +16,19 @@ Monitoring a website:
 - https://stackify.com/web-performance-monitoring-guide-developers/
 - https://blog.paessler.com/10-website-performance-indicators-you-should-monitor
 
-SSH in detail:
+Detail a SSH connection:
 
 - https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work
 - https://medium.com/@Magical_Mudit/understanding-ssh-workflow-66a0e8d4bf65
 - https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process
 - https://www.slashroot.in/secure-shell-how-does-ssh-work
 - https://www.thegeekyway.com/ultimate-guide-how-ssh-works/
+
+
+Detail a browser request:
+
+- [What happens when you type google.com into your browser's address box and press enter?](https://github.com/alex/what-happens-when)
+
+In an interview, we might get problems related to REST API. We can use `requests` module for this. Below is a useful tutorial on this module.
+
+- https://realpython.com/python-requests/#the-get-request
