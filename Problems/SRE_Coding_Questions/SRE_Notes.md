@@ -29,6 +29,21 @@ Detail a browser request:
 
 - [What happens when you type google.com into your browser's address box and press enter?](https://github.com/alex/what-happens-when)
 
-In an interview, we might get problems related to REST API. We can use `requests` module for this. Below is a useful tutorial on this module.
+**Large scale environments - file distribution / configuration management / command execution:**
 
+- File distribution:
+  - [A Thorough Introduction to Distributed Systems](https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/)
+- Configuration management using Ansible:
+      - [An Introduction to Configuration Management with Ansible](https://www.digitalocean.com/community/conceptual_articles/an-introduction-to-configuration-management-with-ansible)
+- Command execution:
+  -
+
+
+In an interview, we might get problems related to REST API. We can use `requests` module for this. Link given is a useful tutorial on this module:
 - https://realpython.com/python-requests/#the-get-request
+
+Operating Systems tutorials:
+
+- [IIT Kharagpur operating system tutorial](https://www.youtube.com/playlist?list=PLFN0Qcc8RnU62xhyLF4KEe5fxneHPAkog)
+- [Operating System by saurabh school](https://www.youtube.com/playlist?list=PLTZbNwgO5ebqnympIYe2GX4hjjsS9Psdm)
+- [Operating Systems by Ravindra babu](https://www.youtube.com/watch?v=2i2N_Qo_FyM&list=PLEbnTDJUr_If_BnzJkkN_J0Tl3iXTL8vq)
