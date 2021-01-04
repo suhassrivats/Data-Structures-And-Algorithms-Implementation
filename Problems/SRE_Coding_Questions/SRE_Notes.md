@@ -34,10 +34,7 @@ Detail a browser request:
 - File distribution:
   - [A Thorough Introduction to Distributed Systems](https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/)
 - Configuration management using Ansible:
-      - [An Introduction to Configuration Management with Ansible](https://www.digitalocean.com/community/conceptual_articles/an-introduction-to-configuration-management-with-ansible)
-- Command execution:
-  -
-
+  - [An Introduction to Configuration Management with Ansible](https://www.digitalocean.com/community/conceptual_articles/an-introduction-to-configuration-management-with-ansible)
 
 In an interview, we might get problems related to REST API. We can use `requests` module for this. Link given is a useful tutorial on this module:
 - https://realpython.com/python-requests/#the-get-request
