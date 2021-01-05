@@ -44,3 +44,7 @@ Operating Systems tutorials:
 - [IIT Kharagpur Operating System tutorial](https://www.youtube.com/playlist?list=PLFN0Qcc8RnU62xhyLF4KEe5fxneHPAkog)
 - [Operating System by saurabh school](https://www.youtube.com/playlist?list=PLTZbNwgO5ebqnympIYe2GX4hjjsS9Psdm)
 - [Operating Systems by Ravindra babu](https://www.youtube.com/watch?v=2i2N_Qo_FyM&list=PLEbnTDJUr_If_BnzJkkN_J0Tl3iXTL8vq)
+
+Linux Internals:
+
+- [Linux Internals by DJ Ware](https://www.youtube.com/playlist?list=PLWK00SLo2KcQi1hlP2_allMWeG19MkQa7)
