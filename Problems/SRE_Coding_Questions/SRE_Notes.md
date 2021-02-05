@@ -50,3 +50,8 @@ Operating Systems tutorials:
 Linux Internals:
 
 - [Linux Internals by DJ Ware](https://www.youtube.com/playlist?list=PLWK00SLo2KcQi1hlP2_allMWeG19MkQa7)
+
+Troubleshooting:
+
+- [What to do when your Linux file system shows it’s full, but really isn’t](https://www.atlanticmetro.net/what-to-do-when-your-linux-file-system-shows-its-full-but-really-isnt/)
+
