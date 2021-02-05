@@ -5,6 +5,7 @@ Interview prep guide (topics):
 - https://github.com/mxssl/sre-interview-prep-guide
 - https://github.com/michael-kehoe/sre-interview/blob/master/linux-by-subsystem/basics.md
 - [Conglomeration of Linkedin SRE questions from glassdoor](https://github.com/krishnaramb/FB_Prep/wiki/linkedin)
+- https://blog.balthazar-rouberol.com/preparing-the-sre-interview
 
 Handling continuously growing file using Python:
 
@@ -44,6 +45,7 @@ Operating Systems tutorials:
 - [IIT Kharagpur Operating System tutorial by Dr. PK Biswas](https://www.youtube.com/playlist?list=PLFN0Qcc8RnU62xhyLF4KEe5fxneHPAkog)
 - [Operating System by Saurabh school](https://www.youtube.com/playlist?list=PLTZbNwgO5ebqnympIYe2GX4hjjsS9Psdm)
 - [Operating Systems by Ravindra Babu](https://www.youtube.com/watch?v=2i2N_Qo_FyM&list=PLEbnTDJUr_If_BnzJkkN_J0Tl3iXTL8vq)
+- [Last Minute Notes – Operating Systems](https://www.geeksforgeeks.org/last-minute-notes-operating-systems/)
 
 Linux Internals:
 
