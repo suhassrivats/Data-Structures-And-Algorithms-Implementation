@@ -13,9 +13,12 @@ Handling continuously growing file using Python:
 
 Monitoring a website:
 
-- https://www.monitis.com/blog/detailed-guide-for-website-monitoring/
-- https://stackify.com/web-performance-monitoring-guide-developers/
-- https://blog.paessler.com/10-website-performance-indicators-you-should-monitor
+- An Introduction to Metrics, Monitoring, and Alerting
+    - https://linkedin.github.io/school-of-sre/metrics_and_monitoring/introduction/#introduction
+    - https://www.digitalocean.com/community/tutorials/an-introduction-to-metrics-monitoring-and-alerting
+
+- Gathering Metrics from Your Infrastructure and Applications
+    - https://www.digitalocean.com/community/tutorials/gathering-metrics-from-your-infrastructure-and-applications
 
 Detail a SSH connection:
 
@@ -30,12 +33,18 @@ Detail a browser request:
 
 - [What happens when you type google.com into your browser's address box and press enter?](https://github.com/alex/what-happens-when)
 
-**Large scale environments - file distribution / configuration management / command execution:**
+Large scale environments:
 
-- File distribution:
-  - [A Thorough Introduction to Distributed Systems](https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/)
-- Configuration management using Ansible:
-  - [An Introduction to Configuration Management with Ansible](https://www.digitalocean.com/community/conceptual_articles/an-introduction-to-configuration-management-with-ansible)
+- File distribution
+
+- - Using Multicast Rsync (MRsync): https://www.jamesclarke.net/projects/msync
+  - Using BitTorrent: [How BitTorrent Works?](https://computer.howstuffworks.com/bittorrent.htm)
+
+- Configuration management 
+
+  - https://www.digitalocean.com/community/conceptual_articles/an-introduction-to-configuration-management-with-ansible)
+
+- Command execution
 
 In an interview, we might get problems related to REST API. We can use `requests` module for this. Link given is a useful tutorial on this module:
 - https://realpython.com/python-requests/#the-get-request
@@ -44,7 +53,6 @@ Operating Systems tutorials:
 
 - [IIT Kharagpur Operating System tutorial by Dr. PK Biswas](https://www.youtube.com/playlist?list=PLFN0Qcc8RnU62xhyLF4KEe5fxneHPAkog)
 - [Operating System by Saurabh school](https://www.youtube.com/playlist?list=PLTZbNwgO5ebqnympIYe2GX4hjjsS9Psdm)
-- [Operating Systems by Ravindra Babu](https://www.youtube.com/watch?v=2i2N_Qo_FyM&list=PLEbnTDJUr_If_BnzJkkN_J0Tl3iXTL8vq)
 - [Last Minute Notes – Operating Systems](https://www.geeksforgeeks.org/last-minute-notes-operating-systems/)
 
 Linux Internals:
@@ -54,4 +62,3 @@ Linux Internals:
 Troubleshooting:
 
 - [What to do when your Linux file system shows it’s full, but really isn’t](https://www.atlanticmetro.net/what-to-do-when-your-linux-file-system-shows-its-full-but-really-isnt/)
-
