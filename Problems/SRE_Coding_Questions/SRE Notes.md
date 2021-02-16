@@ -37,7 +37,7 @@ Large scale environments:
 
 - File distribution
 
-- - Using Multicast Rsync (MRsync): https://www.jamesclarke.net/projects/msync
+  - Using Multicast Rsync (MRsync): https://www.jamesclarke.net/projects/msync
   - Using BitTorrent: [How BitTorrent Works?](https://computer.howstuffworks.com/bittorrent.htm)
 
 - Configuration management 
