@@ -27,10 +27,12 @@ Detail a SSH connection:
 - https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process
 - https://www.slashroot.in/secure-shell-how-does-ssh-work
 - https://www.thegeekyway.com/ultimate-guide-how-ssh-works/
+- https://phoenixnap.com/kb/how-does-ssh-work
 
 
 Detail a browser request:
 
+- https://www.freecodecamp.org/news/what-happens-when-you-hit-url-in-your-browser/
 - [What happens when you type google.com into your browser's address box and press enter?](https://github.com/alex/what-happens-when)
 
 Large scale environments:
@@ -40,7 +42,7 @@ Large scale environments:
   - Using Multicast Rsync (MRsync): https://www.jamesclarke.net/projects/msync
   - Using BitTorrent: [How BitTorrent Works?](https://computer.howstuffworks.com/bittorrent.htm)
 
-- Configuration management 
+- Configuration management
 
   - https://www.digitalocean.com/community/conceptual_articles/an-introduction-to-configuration-management-with-ansible)
 
