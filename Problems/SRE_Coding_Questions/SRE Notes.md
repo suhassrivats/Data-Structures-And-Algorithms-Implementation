@@ -60,7 +60,35 @@ Operating Systems tutorials:
 Linux Internals:
 
 - [Linux Internals by DJ Ware](https://www.youtube.com/playlist?list=PLWK00SLo2KcQi1hlP2_allMWeG19MkQa7)
+- [Linux Boot Process](https://www.youtube.com/watch?v=mHB0Z-HUauo)
 
 Troubleshooting:
 
 - [What to do when your Linux file system shows it’s full, but really isn’t](https://www.atlanticmetro.net/what-to-do-when-your-linux-file-system-shows-its-full-but-really-isnt/)
+- [How to free inode usage?](https://stackoverflow.com/questions/653096/how-to-free-inode-usage)
+- [Linux troubleshooting tools](https://syedali.net/2013/08/20/linux-troubleshooting-tools/)
+
+Networking:
+
+- [Packet Traveling - How to get packets from one side of the internet to the other?](https://www.practicalnetworking.net/series/packet-traveling/packet-traveling/)
+- [Linux Performance Analysis in 60,000 Milliseconds](https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55)
+
+SLO, SLI, SLA:
+
+- [SRE fundamentals: SLIs, SLAs and SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-slis-slas-and-slos)
+
+Git:
+
+- [How to set up an efficient development workflow with Git](https://proandroiddev.com/how-to-set-up-an-efficient-development-workflow-with-git-and-ci-cd-5e8916f6bece)
+
+
+- Common Git Interview Questions:
+
+  - https://career.guru99.com/top-40-interview-questions-on-git/
+  - https://www.edureka.co/blog/interview-questions/git-interview-questions/
+  - [Git Stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
+
+Incident Management:
+
+- https://www.atlassian.com/incident-management
+-
