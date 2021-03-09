@@ -10,7 +10,7 @@
 class Solution:
     def isUnivalTree(self, root: TreeNode) -> bool:
         """
-        Time Complexity: O(N), where NN is the number of nodes in the given
+        Time Complexity: O(N), where N is the number of nodes in the given
         tree.
         Space Complexity: O(N)
         """
@@ -44,3 +44,17 @@ class Solution:
                 return False
 
         return self.isUnivalTree(root.left) and self.isUnivalTree(root.right)
+
+
+# Recursive - DFS
+class Solution:
+    def isUnivalTree(self, root: TreeNode) -> bool:
+        vals = self.dfs(root, [])
+        return len(set(vals)) == 1
+
+    def dfs(self, node, vals):
+        if node:
+            vals.append(node.val)
+            self.dfs(node.left, vals)
+            self.dfs(node.right, vals)
+        return vals
