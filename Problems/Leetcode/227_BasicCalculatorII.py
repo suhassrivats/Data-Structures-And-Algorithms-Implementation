@@ -44,3 +44,36 @@ class Solution:
                 cur_operation = cur_char
             i += 1
         return res
+
+
+class Solution:
+    def calculate(self, s: str) -> int:
+        """
+        Time Complexity #
+            The time complexity of the above algorithm will be O(N) where ‘N’
+            is the number of characters in the input string.
+
+        Space Complexity #
+            O(D): If D is the total number of digits in the string, then space
+            complexity will be O(D). As stack should store all digits.
+        """
+
+        if not s:
+            return "0"
+        num, stack, sign = 0, [], '+'
+        operators = ['+', '-', '*', '/']
+        for i in range(len(s)):
+            if s[i].isdigit():
+                num = num * 10 + int(s[i])  # Could be a number with more than 1 digit
+            if s[i] in operators or i == len(s)-1:
+                if sign == '+':
+                    stack.append(num)
+                elif sign == '-':
+                    stack.append(-num)
+                elif sign == '*':
+                    stack.append(stack.pop()*num)
+                elif sign == '/':
+                    stack.append(int(stack.pop()/num))
+                num = 0
+                sign = s[i]
+        return sum(stack)
