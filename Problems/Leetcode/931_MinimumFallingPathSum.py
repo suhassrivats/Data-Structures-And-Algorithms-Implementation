@@ -1,6 +1,9 @@
 class Solution:
     def minFallingPathSum(self, matrix: List[List[int]]) -> int:
         """
+        Idea: by taking the minimum value from itself plus one of the 3 values 
+            right above it
+
         T: O(M*N)
         C: In-place, O(M*N)
         """

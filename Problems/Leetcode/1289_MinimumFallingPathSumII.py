@@ -1,3 +1,6 @@
+import heapq
+
+
 class Solution:
     def minFallingPathSum(self, arr) -> int:
         rows, cols = len(arr), len(arr[0])
@@ -16,11 +19,45 @@ class Solution:
             prev_min2_value = min(val for j, val in enumerate(prev_row) if j != prev_min1_index)
             prev_min2_index = prev_row.index(prev_min2_value)
 
+            # Optimal way to find 2 minimum elements is to use heap
+            # r = heapq.nsmallest(2, A[i - 1])
+
             for j in range(cols):
-                # If the smallest element in the previous row in the same col
+                # If the smallest element in the previous row is in the same col
                 if prev_row[j] == prev_min1_value:
                     arr[i][j] += prev_min2_value
                 else:
                     arr[i][j] += prev_min1_value
 
         return min(arr[-1])  # take min of last row
+
+
+class Solution:
+    def minFallingPathSum(self, grid: List[List[int]]) -> int:
+        """ 
+        Optimal Approach
+
+        Idea:
+            - Start iteration from 1st row
+            - Add min from prev row to the min of current row if they are not in same col
+            - If they are in same col, add second min to the min of current row
+
+        Walkthrough: arr = [[1,2,3],[4,5,6],[7,8,9]]
+
+        1       2       3
+        4+2     5+1     6+1
+        7+6     8+6     9+6  
+        """
+
+        for row in range(1, len(grid)):
+            prev_row = grid[row-1]
+            # Find 2 minimum elements
+            mins = heapq.nsmallest(2, prev_row)
+
+            for col in range(len(grid[0])):
+                # If the min element is the same column, then add second min element.
+                if prev_row[col] == mins[0]:
+                    grid[row][col] += mins[1]
+                else:  # Else add min element
+                    grid[row][col] += mins[0]
+        return min(grid[-1])
