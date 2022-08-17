@@ -7,6 +7,15 @@ class DLLNode:
 
 
 class LRUCache(object):
+    """
+    Idea:
+        - Use a doubly linked list
+            - Add new items to tail. Therefore, most recently used (MRU) item is closer to the tail
+            - Least recently used will be nearer to head
+            - While adding items we need to make sure that we haven't exceeded the capacity of cache
+        - If the get item is near the head or tail, then it is a O(1) operation. If not, it is going to be O(n). 
+        - To avoid this, we can use a hashmap which will have key and value as the location of node. This way we can lookup the node in O(1) time and remove it. 
+    """
 
     def __init__(self, capacity):
         # Initialize class variables
@@ -28,8 +37,8 @@ class LRUCache(object):
 
     def put(self, key, value):
         # Set the value if the key is not present in the cache. If the cache
-        # is at capacity remove the oldest item. We are adding new elements to 
-        # the tail of DLL. So by convention, element closer to tail is MRU 
+        # is at capacity remove the oldest item. We are adding new elements to
+        # the tail of DLL. So by convention, element closer to tail is MRU
         # (Most Recently Used) and element closer to head is LRU
         if key in self.dic:
             self._remove(self.dic[key])
@@ -38,7 +47,7 @@ class LRUCache(object):
         self._add(n)
         self.dic[key] = n
         if len(self.dic) > self.capacity:
-            n = self.head.next # LRU node is always next to head
+            n = self.head.next  # LRU node is always next to head
             self._remove(n)
             del self.dic[n.key]
 
