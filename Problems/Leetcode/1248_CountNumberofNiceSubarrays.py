@@ -1,6 +1,12 @@
 class Solution:
     def numberOfSubarrays(self, nums: List[int], k: int) -> int:
         """
+        Idea:
+            - Have two pointers.
+            - Move right pointer until odd_count == 3
+                - Move left pointer to right, reduce odd count along the way
+                - See how many sub arrays can be formed
+        
         T: O(N)
         S: O(1)
         """
