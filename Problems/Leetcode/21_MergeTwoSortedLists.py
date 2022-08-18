@@ -23,8 +23,8 @@ class Solution:
         # Make sure that sorting_ptr points to the beginning of linked list
         if l1 and l2:
             if l1.val <= l2.val:
-                sorting_ptr = l1
-                l1 = sorting_ptr.next
+                sorting_ptr = l1  # s points to head node of list1
+                l1 = sorting_ptr.next  # list1 pointer points to next node
             else:
                 sorting_ptr = l2
                 l2 = sorting_ptr.next
