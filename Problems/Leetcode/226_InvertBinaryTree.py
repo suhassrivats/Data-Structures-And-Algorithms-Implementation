@@ -17,3 +17,19 @@ class Solution:
         root.right = left
 
         return root
+
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        # Base case
+        if root is None:
+            return None
+
+        # Swap the children
+        tmp = root.left
+        root.left = root.right
+        root.right = tmp
+
+        # Repeat the steps for root.left and root.right nodes recursively
+        self.invertTree(root.left)
+        self.invertTree(root.right)
+
+        return root

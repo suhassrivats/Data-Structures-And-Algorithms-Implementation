@@ -14,8 +14,31 @@ class TreeNode:
         self.left = left
         self.right = right
 
+# Recursive - DFS (inorder) approach
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        # Base case
+        if not root:
+            return 0
 
-# Recursion using top-down approach (kind of preorder traversal)
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
+
+# Iterative - DFS (preorder) approach
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        if not root:
+            return 0
+        res = 0
+        stack = [[root, 1]]
+        while stack:
+            node, depth = stack.pop()
+            if node:
+                res = max(res, depth)
+                stack.append([node.left, depth+1])
+                stack.append([node.right, depth+1])
+        return res
+
+# Recursive - DFS (preorder) approach
 class Solution:
 
     def __init__(self):
@@ -33,17 +56,7 @@ class Solution:
 
         return self.answer
 
-
-# Recursion using bottom-up approach (kind of postorder approach)
-class Solution:
-
-    def maxDepth(self, root: TreeNode) -> int:
-        if not root:
-            return 0
-        return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
-
-
-# Iterative solution - BFS
+# Iterative - BFS approach
 class Solution:
 
     def maxDepth(self, root: TreeNode) -> int:

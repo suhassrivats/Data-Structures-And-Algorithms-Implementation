@@ -29,6 +29,7 @@
      - HashMap
 7. Trees
     - Binary Tree
+      - Implementation
       - Depth First Traversals
         - PreOrder
         - InOrder
