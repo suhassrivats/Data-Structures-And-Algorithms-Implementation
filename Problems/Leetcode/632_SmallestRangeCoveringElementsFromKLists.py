@@ -39,3 +39,69 @@ class Solution:
                 current_max = max(current_max, arr[i+1])
 
         return [range_start, range_end]
+
+import heapq
+
+
+class Element:
+    def __init__(self, value, index, row, array_size):
+        self.value = value
+        self.index = index
+        self.row = row
+        self.array_size = array_size
+
+    def __lt__(self, other):
+        return self.value < other.value
+
+class Solution:
+    """
+    [4,10,15,24,26]
+    [0, 9,12,20]
+    [5,18,22,30]
+    """
+
+
+    def smallestRange(self, nums: List[List[int]]) -> List[int]:
+        mn, mx = float('inf'), float('-inf')
+        range_val = float('inf')
+        low, high = 0, 0
+        q = []
+
+        # Initially push the first element of each row into a min-heap.
+        for i in range(len(nums)):
+            element = Element( nums[i][0], 0, i, len(nums[i]))
+            heapq.heappush(q, (element.value, element))
+
+            # Find min and max values of these items in the list.
+            mn = min(mn, nums[i][0])
+            mx = max(mx, nums[i][0])
+
+        # To find if its the smallest range, we need to check all possibilities
+        while q:
+            # Pop the minimum element and check the range_value
+            maybe_min, temp_element = heapq.heappop(q)
+
+            if range_val > mx - maybe_min:
+                mn = maybe_min
+                range_val = mx - mn
+                low, high = mn, mx
+
+            if temp_element.index == temp_element.array_size - 1:
+                break
+
+            # Move to next minimum item (lists are sorted) in the same row as the popped item and push next item to heap
+            temp_element.index += 1
+            next_element = Element(
+                nums[temp_element.row][temp_element.index],
+                temp_element.index,
+                temp_element.row,
+                temp_element.array_size
+            )
+            heapq.heappush(q, (next_element.value, next_element))
+
+            # Check if the newly added items is the new max
+            mx = max(mx, nums[temp_element.row][temp_element.index])
+
+
+        return [low, high]
+
