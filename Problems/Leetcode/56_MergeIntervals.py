@@ -17,7 +17,7 @@ class Solution:
         if len(intervals) < 2:
             return intervals
 
-        # sort intervals on the sort time
+        # sort intervals based on start time
         intervals = sorted(intervals, key=lambda x: x[0])
 
         merged_intervals = []
@@ -28,7 +28,7 @@ class Solution:
             interval = intervals[i]
             if interval[0] <= end:  # overlapping intervals, adjust the end
                 end = max(interval[1], end)
-            else:  # non-overlapping interval, add the previous internval and reset
+            else:  # non-overlapping interval, add the previous interval and reset
                 merged_intervals.append([start, end])
                 start = interval[0]
                 end = interval[1]
