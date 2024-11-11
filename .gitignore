@@ -160,4 +160,5 @@ cython_debug/
 #.idea/
 
 ~$coding_tracker.xlsx
-
+.DS_Store
+.idea/
