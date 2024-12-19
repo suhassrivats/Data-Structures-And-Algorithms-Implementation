@@ -27,7 +27,7 @@ def longest_substring_with_k_distinct(str, k):
   max_length = 0
   char_frequency = {}
 
-  # in the following loop we'll try to extend the range [window_start, window_end]
+  # In the following loop we'll try to extend the range [window_start, window_end]
   for window_end in range(len(str)):
     right_char = str[window_end]
     if right_char not in char_frequency:
