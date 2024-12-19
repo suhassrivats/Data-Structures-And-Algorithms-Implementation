@@ -1,4 +1,4 @@
-# README: Difference Between Subarray, Subset, and Subsequence
+# Difference Between Subarray, Subset, and Subsequence
 
 ## Introduction
 An **array** is a linear collection of values stored at contiguous memory locations. Understanding the concepts of **subarray**, **subset**, and **subsequence** is crucial for solving array-related problems effectively. This document explains their definitions, differences, examples, and how to calculate the number of each for a given array.
@@ -13,8 +13,6 @@ An **array** is a linear collection of values stored at contiguous memory locati
 
 ### Example Array:
 Array: `arr = [56, 50, 34, 24, 12]`
-
-For more details, refer to articles on arrays in data structures.
 
 ---
 
