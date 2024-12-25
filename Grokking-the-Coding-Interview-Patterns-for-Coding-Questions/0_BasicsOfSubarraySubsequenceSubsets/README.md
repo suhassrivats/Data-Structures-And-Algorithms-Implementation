@@ -41,9 +41,8 @@ Number of subarrays = `n * (n + 1) / 2`
 
 ### Subset
 A **subset** is any possible combination of elements from the array.
-- **Order:** Not necessarily preserved.
+- **Order:** Not necessarily preserved. In the case of subsets, the order of the elements does not matter, meaning that `[2, 1]` and `[1, 2]` are considered the same subset. The key factor is that both 1 and 2 are elements of the original array `[1, 2, 3]`, so `[2, 1]` is a valid subset of the array.
 - **Includes:** All possible combinations, including empty set.
-- Yes, \([2, 1]\) is a subset of the array \([1, 2, 3]\). In the case of subsets, the order of the elements does not matter, meaning that \([2, 1]\) and \([1, 2]\) are considered the same subset. The key factor is that both 1 and 2 are elements of the original array \([1, 2, 3]\), so \([2, 1]\) is a valid subset of the array.
 
 #### Example:
 Array: `arr = [1, 2, 3]`
