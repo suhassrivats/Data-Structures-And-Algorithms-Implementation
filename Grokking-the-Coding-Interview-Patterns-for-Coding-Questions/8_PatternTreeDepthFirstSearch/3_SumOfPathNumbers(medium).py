@@ -10,29 +10,33 @@ class TreeNode:
     self.left = left
     self.right = right
 
-def sumNumbers(root):
-  def dfs(node, current_number):
-    # Base case: if the node is None, return 0
+def isValidSequence(root, sequence):
+  def dfs(node, index):
+    # Base case: if the node is None, return False
     if not node:
-      return 0
+      return False
 
-    # Append the current node's value to the current number string
-    current_number += str(node.val)
+    # If index is out of bounds, return False (sequence is too long)
+    if index >= len(sequence):
+      return False
 
-    # If it's a leaf node, convert the current number string to an integer
-    # and return it
-    if not node.left and not node.right:
-      return int(current_number)
+    # If we reach the end of the sequence, check if it's a leaf node
+    if index == len(sequence) - 1:
+      return node.val == sequence[index] and not node.left and not node.right
+      # if node.val == sequence[index] and not node.left and not node.right:
+      #   return True
+      # else:
+      #   return False
 
-    # Recur for left and right subtrees
-    left_sum = dfs(node.left, current_number)
-    right_sum = dfs(node.right, current_number)
+    # Check the current node value matches the sequence
+    if node.val == sequence[index]:
+      # Recursively check the left and right subtrees
+      return dfs(node.left, index + 1) or dfs(node.right, index + 1)
 
-    # Return the total sum from both subtrees
-    return left_sum + right_sum
+    return False
 
-  # Start the DFS from the root node with an empty string
-  return dfs(root, "")
+  # Start DFS from the root and index 0 in the sequence
+  return dfs(root, 0)
 
 # Example Tree:
 #       1
@@ -50,9 +54,31 @@ root.left.right = TreeNode(5)
 root.right.left = TreeNode(6)
 root.right.right = TreeNode(7)
 
-# Get the total sum of all path numbers
-result = sumNumbers(root)
-print(result)  # Output: 408 (The sum of the path numbers: 124 + 125 + 136 + 137)
+# Test case: sequence [1, 2, 5]
+sequence = [1, 2, 5]
+result = isValidSequence(root, sequence)
+print(result)  # Output: True (Path: 1 → 2 → 5)
+
+# Test case: sequence [1, 3, 7]
+sequence = [1, 3, 7]
+result = isValidSequence(root, sequence)
+print(result)  # Output: True (Path: 1 → 3 → 7)
+
+# Test case: sequence [1, 3, 6]
+sequence = [1, 3, 6]
+result = isValidSequence(root, sequence)
+print(result)  # Output: True (Path: 1 → 3 → 6)
+
+# Test case: sequence [1, 2, 4]
+sequence = [1, 2, 4]
+result = isValidSequence(root, sequence)
+print(result)  # Output: True (Path: 1 → 2 → 4)
+
+# Test case: sequence [1, 2, 6]
+sequence = [1, 2, 6]
+result = isValidSequence(root, sequence)
+print(result)  # Output: False (No path matches this sequence)
+
 
 
 
