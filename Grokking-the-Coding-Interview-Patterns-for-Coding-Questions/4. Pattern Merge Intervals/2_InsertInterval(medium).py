@@ -62,7 +62,7 @@ def insert(intervals, new_interval):
   merged = []
   i, start, end = 0, 0, 1
 
-  # skip (and add to output) all intervals that come before the 'new_interval'
+  # If no overlap, skip (and add to output) all intervals that come before the 'new_interval'
   while i < len(intervals) and intervals[i][end] < new_interval[start]:
     merged.append(intervals[i])
     i += 1
@@ -73,7 +73,7 @@ def insert(intervals, new_interval):
     new_interval[end] = max(intervals[i][end], new_interval[end])
     i += 1
 
-  # insert the new_interval
+  # if there is no overlap, insert the new_interval
   merged.append(new_interval)
 
   # add all the remaining intervals to the output

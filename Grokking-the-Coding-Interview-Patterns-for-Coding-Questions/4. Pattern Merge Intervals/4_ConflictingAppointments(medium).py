@@ -1,4 +1,5 @@
-Problem Statement 
+"""
+Problem Statement
 Given an array of intervals representing ‘N’ appointments, find out if a person can attend all the appointments.
 
 Example 1:
@@ -18,6 +19,7 @@ Example 3:
 Appointments: [[4,5], [2,3], [3,6]]
 Output: false
 Explanation: Since [4,5] and [3,6] overlap, a person cannot attend both of these appointments.
+"""
 
 #mycode
 def can_attend_all_appointments(intervals):
