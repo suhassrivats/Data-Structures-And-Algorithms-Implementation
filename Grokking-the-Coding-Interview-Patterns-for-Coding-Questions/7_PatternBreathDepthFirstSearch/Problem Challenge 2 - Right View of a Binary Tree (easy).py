@@ -8,60 +8,6 @@ The right view of a binary tree is the set of nodes visible when the tree is see
 '''
 
 
-#mycode
-from __future__ import print_function
-from collections import deque
-
-
-class TreeNode:
-  def __init__(self, val):
-    self.val = val
-    self.left, self.right = None, None
-
-
-def tree_right_view(root):
-  result = []
-  # TODO: Write your code here
-  if not root:
-    return result
-
-  queue = deque()
-  queue.append(root)
-
-  while queue:
-    for i in range(len(queue)):
-
-      current = queue.popleft()
-      
-      if current.left:
-        queue.append(current.left)
-      if current.right:
-        queue.append(current.right)
-        
-    result.append(current)
-
-  return result
-
-def main():
-  root = TreeNode(12)
-  root.left = TreeNode(7)
-  root.right = TreeNode(1)
-  root.left.left = TreeNode(9)
-  root.right.left = TreeNode(10)
-  root.right.right = TreeNode(5)
-  root.left.left.left = TreeNode(3)
-  result = tree_right_view(root)
-  print("Tree right view: ")
-  for node in result:
-    print(str(node.val) + " ", end='')
-
-
-main()
-
-
-
-
-#answer
 from __future__ import print_function
 from collections import deque
 
@@ -81,7 +27,7 @@ def tree_right_view(root):
   queue.append(root)
   while queue:
     levelSize = len(queue)
-    for i in range(0, levelSize):
+    for i in range(levelSize):
       currentNode = queue.popleft()
       # if it is the last node of this level, add it to the result
       if i == levelSize - 1:

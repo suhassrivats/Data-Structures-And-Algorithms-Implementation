@@ -1,54 +1,10 @@
 '''
 Problem Statement 
-Given a binary tree, populate an array to represent its level-by-level traversal. 
-You should populate the values of all nodes of each level from left to right in separate sub-arrays.
+Given a binary tree, populate an array to represent its zigzag level order traversal. 
+You should populate the values of all nodes of the first level from left to right, 
+then right to left for the next level and keep alternating in the same manner for the following levels.
 '''
 
-#answer
-from collections import deque
-
-
-class TreeNode:
-  def __init__(self, val):
-    self.val = val
-    self.left, self.right = None, None
-
-
-def traverse(root):
-  result = []
-  # TODO: Write your code here
-  if not root:
-    return result
-  stack = [root]
-  value=[[root.val]]
-  while stack:
-    current=[]
-    current_val=[]
-    for i in stack:
-      current_val.append(i.val)
-      if i.left:
-        current.append(i.left)
-      if i.right:
-        current.append(i.right)
-    result.append(current_val)
-    stack = current
-  return result
-
-
-def main():
-  root = TreeNode(12)
-  root.left = TreeNode(7)
-  root.right = TreeNode(1)
-  root.left.left = TreeNode(9)
-  root.right.left = TreeNode(10)
-  root.right.right = TreeNode(5)
-  print("Level order traversal: " + str(traverse(root)))
-
-
-main()
-
-
-#answer
 from collections import deque
 
 
@@ -65,20 +21,28 @@ def traverse(root):
 
   queue = deque()
   queue.append(root)
+  leftToRight = True
   while queue:
     levelSize = len(queue)
-    currentLevel = []
+    currentLevel = deque()
     for _ in range(levelSize):
       currentNode = queue.popleft()
-      # add the node to the current level
-      currentLevel.append(currentNode.val)
+
+      # add the node to the current level based on the traverse direction
+      if leftToRight:
+        currentLevel.append(currentNode.val)
+      else:
+        currentLevel.appendleft(currentNode.val)
+
       # insert the children of current node in the queue
       if currentNode.left:
         queue.append(currentNode.left)
       if currentNode.right:
         queue.append(currentNode.right)
 
-    result.append(currentLevel)
+    result.append(list(currentLevel))
+    # reverse the traversal direction
+    leftToRight = not leftToRight
 
   return result
 
@@ -90,7 +54,9 @@ def main():
   root.left.left = TreeNode(9)
   root.right.left = TreeNode(10)
   root.right.right = TreeNode(5)
-  print("Level order traversal: " + str(traverse(root)))
+  root.right.left.left = TreeNode(20)
+  root.right.left.right = TreeNode(17)
+  print("Zigzag traversal: " + str(traverse(root)))
 
 
 main()
