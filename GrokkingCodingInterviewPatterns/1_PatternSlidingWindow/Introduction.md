@@ -78,42 +78,69 @@ print("Averages of subarrays of size K:", find_averages_sliding_window(K, arr))
 ```python
 from collections import defaultdict
 
-def sliding_window_template(s, t):
+def sliding_window_template(s: str, t: str):
+    """
+    Generic sliding window template.
+
+    s → source string (where we search)
+    t → target pattern (what we must satisfy)
+
+    Goal:
+    Find substrings in `s` that satisfy frequency
+    constraints defined by string `t`.
+
+    Core idea:
+    1. Expand the window using window_end.
+    2. When the condition is satisfied, shrink using window_start.
+    3. Update result while valid.
+    """
+
     result = []
+
     if len(t) > len(s):
         return result
 
-    # Build frequency map
-    freq = defaultdict(int)
+    # Step 1: Build frequency map for required characters
+    frequency = defaultdict(int)
     for char in t:
-        freq[char] += 1
+        frequency[char] += 1
 
-    counter = len(freq)
+    # Number of distinct characters that must be satisfied
+    required_matches = len(frequency)
 
-    begin = 0
-    end = 0
+    window_start = 0
 
-    while end < len(s):
-        char = s[end]
-        if char in freq:
-            freq[char] -= 1
-            if freq[char] == 0:
-                counter -= 1
+    # Step 2: Expand the window
+    for window_end in range(len(s)):
 
-        end += 1
+        right_char = s[window_end]
 
-        # When condition is met (example: counter == 0)
-        while counter == 0:
-            # Save or update result here depending on problem
-            result.append(s[begin:end])  # Example behavior
+        # If this character is needed
+        if right_char in frequency:
+            frequency[right_char] -= 1
 
-            temp_char = s[begin]
-            if temp_char in freq:
-                freq[temp_char] += 1
-                if freq[temp_char] > 0:
-                    counter += 1
+            # If its count becomes zero,
+            # we satisfied this character's requirement
+            if frequency[right_char] == 0:
+                required_matches -= 1
 
-            begin += 1
+        # Step 3: When all required chars matched
+        while required_matches == 0:
+
+            # 👉 Problem-specific logic goes here
+            result.append(s[window_start:window_end + 1])
+
+            left_char = s[window_start]
+
+            if left_char in frequency:
+                frequency[left_char] += 1
+
+                # If count becomes positive,
+                # window is no longer valid
+                if frequency[left_char] > 0:
+                    required_matches += 1
+
+            window_start += 1  # Shrink window
 
     return result
 ```
