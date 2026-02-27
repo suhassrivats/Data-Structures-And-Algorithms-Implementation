@@ -92,17 +92,3 @@ Number of subsequences = `2^n`
 | **Contiguity**  | Required           | Not required       | Not required     |
 | **Order**       | Preserved          | Not preserved      | Preserved        |
 | **Formula**     | `n * (n + 1) / 2`  | `2^n`              | `2^n`            |
-
----
-
-## Summary of Counts
-Given an array of size `n`:
-- **Subarrays:** `n * (n + 1) / 2`
-- **Subsets:** `2^n`
-- **Subsequences:** `2^n`
-
-### Example (Array Size = 3):
-- Subarrays: `6`
-- Subsequences: `8`
-- Subsets: `8`
-
