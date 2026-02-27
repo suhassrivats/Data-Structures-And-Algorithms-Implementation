@@ -14,28 +14,23 @@ Here is the final output containing the averages of all contiguous subarrays of 
 
 A brute-force algorithm will calculate the sum of every 5-element contiguous subarray of the given array and divide the sum by ‘5’ to find the average. This is what the algorithm will look like:
 
-```java
-import java.util.Arrays;
+```python
+def find_averages_brute_force(K, arr):
+    result = []
 
-class AverageOfSubarrayOfSizeK {
-  public static double[] findAverages(int K, int[] arr) {
-    double[] result = new double[arr.length - K + 1];
-    for (int i = 0; i <= arr.length - K; i++) {
-      // find sum of next 'K' elements
-      double sum = 0;
-      for (int j = i; j < i + K; j++)
-        sum += arr[j];
-      result[i] = sum / K; // calculate average
-    }
+    for i in range(len(arr) - K + 1):
+        window_sum = 0
+        for j in range(i, i + K):
+            window_sum += arr[j]
+        result.append(window_sum / K)
 
-    return result;
-  }
+    return result
 
-  public static void main(String[] args) {
-    double[] result = AverageOfSubarrayOfSizeK.findAverages(5, new int[] { 1, 3, 2, 6, -1, 4, 1, 8, 2 });
-    System.out.println("Averages of subarrays of size K: " + Arrays.toString(result));
-  }
-}
+
+# Example usage
+arr = [1, 3, 2, 6, -1, 4, 1, 8, 2]
+K = 5
+print("Averages of subarrays of size K:", find_averages_brute_force(K, arr))
 ```
 
 **Time complexity:** Since for every element of the input array, we are calculating the sum of its next ‘K’ elements, the time complexity of the above algorithm will be O\(N\*K\) where ‘N’ is the number of elements in the input array.
@@ -54,85 +49,71 @@ The efficient way to solve this problem would be to visualize each contiguous su
 
 Here is the algorithm for the Sliding Window approach:
 
-```java
-import java.util.Arrays;
+```python
+def find_averages_sliding_window(K, arr):
+    result = []
+    window_sum = 0
+    window_start = 0
 
-class AverageOfSubarrayOfSizeK {
-  public static double[] findAverages(int K, int[] arr) {
-    double[] result = new double[arr.length - K + 1];
-    double windowSum = 0;
-    int windowStart = 0;
-    for (int windowEnd = 0; windowEnd < arr.length; windowEnd++) {
-      windowSum += arr[windowEnd]; // add the next element
-      // slide the window, we don't need to slide if we've not hit the required window size of 'k'
-      if (windowEnd >= K - 1) {
-        result[windowStart] = windowSum / K; // calculate the average
-        windowSum -= arr[windowStart]; // subtract the element going out
-        windowStart++; // slide the window ahead
-      }
-    }
+    for window_end in range(len(arr)):
+        window_sum += arr[window_end]  # add next element
 
-    return result;
-  }
+        # slide the window when we hit size K
+        if window_end >= K - 1:
+            result.append(window_sum / K)  # calculate average
+            window_sum -= arr[window_start]  # subtract element going out
+            window_start += 1  # slide window forward
 
-  public static void main(String[] args) {
-    double[] result = AverageOfSubarrayOfSizeK.findAverages(5, new int[] { 1, 3, 2, 6, -1, 4, 1, 8, 2 });
-    System.out.println("Averages of subarrays of size K: " + Arrays.toString(result));
-  }
-}
+    return result
+
+
+# Example usage
+arr = [1, 3, 2, 6, -1, 4, 1, 8, 2]
+K = 5
+print("Averages of subarrays of size K:", find_averages_sliding_window(K, arr))
 ```
 
 #### **Template to solve some sliding window problem:**
 
-```java
-public class Solution {
-    public List<Integer> slidingWindowTemplateByHarryChaoyangHe(String s, String t) {
-        //init a collection or int value to save the result according the question.
-        List<Integer> result = new LinkedList<>();
-        if(t.length()> s.length()) return result;
-        
-        //create a hashmap to save the Characters of the target substring.
-        //(K, V) = (Character, Frequence of the Characters)
-        Map<Character, Integer> map = new HashMap<>();
-        for(char c : t.toCharArray()){
-            map.put(c, map.getOrDefault(c, 0) + 1);
-        }
-        //maintain a counter to check whether match the target string.
-        int counter = map.size();//must be the map size, NOT the string size because the char may be duplicate.
-        
-        //Two Pointers: begin - left pointer of the window; end - right pointer of the window
-        int begin = 0, end = 0;
-        
-        //the length of the substring which match the target string.
-        int len = Integer.MAX_VALUE; 
-        
-        //loop at the begining of the source string
-        while(end < s.length()){
-            
-            char c = s.charAt(end);//get a character
-            
-            if( map.containsKey(c) ){
-                map.put(c, map.get(c)-1);// plus or minus one
-                if(map.get(c) == 0) counter--;//modify the counter according the requirement(different condition).
-            }
-            end++;
-            
-            //increase begin pointer to make it invalid/valid again
-            while(counter == 0 /* counter condition. different question may have different condition */){
-                
-                char tempc = s.charAt(begin);//***be careful here: choose the char at begin pointer, NOT the end pointer
-                if(map.containsKey(tempc)){
-                    map.put(tempc, map.get(tempc) + 1);//plus or minus one
-                    if(map.get(tempc) > 0) counter++;//modify the counter according the requirement(different condition).
-                }
-                
-                /* save / update(min/max) the result if find a target*/
-                // result collections or result int value
-                
-                begin++;
-            }
-        }
-        return result;
-    }
-}
+```python
+from collections import defaultdict
+
+def sliding_window_template(s, t):
+    result = []
+    if len(t) > len(s):
+        return result
+
+    # Build frequency map
+    freq = defaultdict(int)
+    for char in t:
+        freq[char] += 1
+
+    counter = len(freq)
+
+    begin = 0
+    end = 0
+
+    while end < len(s):
+        char = s[end]
+        if char in freq:
+            freq[char] -= 1
+            if freq[char] == 0:
+                counter -= 1
+
+        end += 1
+
+        # When condition is met (example: counter == 0)
+        while counter == 0:
+            # Save or update result here depending on problem
+            result.append(s[begin:end])  # Example behavior
+
+            temp_char = s[begin]
+            if temp_char in freq:
+                freq[temp_char] += 1
+                if freq[temp_char] > 0:
+                    counter += 1
+
+            begin += 1
+
+    return result
 ```
