@@ -121,9 +121,6 @@ Order changed → NOT subsequence
 ❌ [1,1]
 Duplicate not in original → NOT subsequence
 
-❌ [4]
-Element not in array → NOT subsequence
-
 ---
 
 ## Key Differences
