@@ -37,6 +37,22 @@ Possible subarrays:
 **Formula for Subarrays:**
 Number of subarrays = `n * (n + 1) / 2`
 
+**What Is NOT a Subarray?**
+
+A subarray must be contiguous.
+
+❌ [1,3]
+Not contiguous → NOT subarray
+
+❌ [2,1]
+Order changed → NOT subarray
+
+❌ [3,2]
+Order changed → NOT subarray
+
+❌ [1,2,3,4]
+4 not in array → invalid
+
 ---
 
 ### Subset
@@ -60,6 +76,17 @@ Possible subsets:
 **Formula for Subsets:**
 Number of subsets = `2^n`
 
+**What is NOT a subset?**
+
+❌ [4]
+Element not in array
+
+❌ [1,1]
+Duplicate not in original
+
+❌ [1,2,4]
+4 not present
+
 ---
 
 ### Subsequence
@@ -82,6 +109,20 @@ Possible subsequences:
 
 **Formula for Subsequences:**
 Number of subsequences = `2^n`
+
+**What is NOT a Subsequence?**
+
+❌ [2,1]
+Order changed → NOT subsequence
+
+❌ [3,1]
+Order changed → NOT subsequence
+
+❌ [1,1]
+Duplicate not in original → NOT subsequence
+
+❌ [4]
+Element not in array → NOT subsequence
 
 ---
 
