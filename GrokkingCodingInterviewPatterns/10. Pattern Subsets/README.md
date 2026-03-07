@@ -111,47 +111,25 @@ For:
 nums = [1,2,3]
 ```
 
-| mask (decimal) | mask (binary) | j=0 check | j=1 check | j=2 check | subset  |
-| -------------- | ------------- | --------- | --------- | --------- | ------- |
-| 0              | 000           | skip      | skip      | skip      | []      |
-| 1              | 001           | add 1     | skip      | skip      | [1]     |
-| 2              | 010           | skip      | add 2     | skip      | [2]     |
-| 3              | 011           | add 1     | add 2     | skip      | [1,2]   |
-| 4              | 100           | skip      | skip      | add 3     | [3]     |
-| 5              | 101           | add 1     | skip      | add 3     | [1,3]   |
-| 6              | 110           | skip      | add 2     | add 3     | [2,3]   |
-| 7              | 111           | add 1     | add 2     | add 3     | [1,2,3] |
-
----
-
-# Mental Model
-
-Think of the bitmask as a **switch panel**.
+Binary representation has 3 bits because N = 3.
 
 ```
-nums = [1,2,3]
-
-switches:
-1 2 3
+bit 2   bit 1   bit 0
+nums[2] nums[1] nums[0]
+   3       2       1
 ```
 
-Mask:
+| mask (decimal) | mask (binary) | j=0 calculation         | j=1 calculation         | j=2 calculation         | subset  |
+| ---------- | ---------- | ----------------------- | ----------------------- | ----------------------- | ------- |
+| 0          | 000        | 000 & 001 = 000 → skip  | 000 & 010 = 000 → skip  | 000 & 100 = 000 → skip  | []      |
+| 1          | 001        | 001 & 001 = 001 → add 1 | 001 & 010 = 000 → skip  | 001 & 100 = 000 → skip  | [1]     |
+| 2          | 010        | 010 & 001 = 000 → skip  | 010 & 010 = 010 → add 2 | 010 & 100 = 000 → skip  | [2]     |
+| 3          | 011        | 011 & 001 = 001 → add 1 | 011 & 010 = 010 → add 2 | 011 & 100 = 000 → skip  | [1,2]   |
+| 4          | 100        | 100 & 001 = 000 → skip  | 100 & 010 = 000 → skip  | 100 & 100 = 100 → add 3 | [3]     |
+| 5          | 101        | 101 & 001 = 001 → add 1 | 101 & 010 = 000 → skip  | 101 & 100 = 100 → add 3 | [1,3]   |
+| 6          | 110        | 110 & 001 = 000 → skip  | 110 & 010 = 010 → add 2 | 110 & 100 = 100 → add 3 | [2,3]   |
+| 7          | 111        | 111 & 001 = 001 → add 1 | 111 & 010 = 010 → add 2 | 111 & 100 = 100 → add 3 | [1,2,3] |
 
-```
-101
-```
-
-Meaning:
-
-```
-ON  OFF  ON
-```
-
-Subset:
-
-```
-[1,3]
-```
 
 ---
 
