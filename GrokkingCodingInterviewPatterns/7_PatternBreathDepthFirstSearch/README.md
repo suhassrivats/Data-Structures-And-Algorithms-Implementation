@@ -17,13 +17,11 @@ where **W** is the maximum number of nodes on any level.
 Look for these signals in a problem statement:
 
 * "Traverse tree **level by level**"
-* "Find the **minimum depth** / **maximum depth** of a tree"
-* "Find all **nodes at distance K** from the root"
+* "What's the shortest way to X?"
+* "Working with a very deep tree/graph, risk of infinite depth"
 * "**Zigzag** / spiral order traversal"
-* "**Connect nodes** at the same level (siblings)"
-* "Find the **level averages** in a binary tree"
-* "**Right view** / left view of a binary tree"
-* "Find the **successor/predecessor** of a given node in level order"
+* "**Connect nodes** at the same level (siblings) / closest neighbors"
+* "Minimum depth is "shortest distance to the nearest leaf." Since BFS visits nodes level by level, the first leaf it encounters is guaranteed to be at the minimum depth. You can stop immediately — no need to explore the rest of the tree."
 
 If the problem cares about **which level** a node belongs to, or requires processing nodes **level-by-level**, BFS is the right tool.
 
@@ -91,18 +89,3 @@ O(W)
 
 where W is the maximum number of nodes on any single level (the widest level of the tree).
 
----
-
-# Problems in This Folder
-
-| # | Problem | Difficulty |
-|---|---------|------------|
-| 1 | Binary Tree Level Order Traversal | Easy |
-| 2 | Reverse Level Order Traversal | Easy |
-| 3 | Zigzag Traversal | Medium |
-| 4 | Level Averages in a Binary Tree | Easy |
-| 5 | Minimum Depth of a Binary Tree | Easy |
-| 6 | Level Order Successor | Easy |
-| 7 | Connect Level Order Siblings | Medium |
-| 8 | Connect All Level Order Siblings | Medium |
-| 9 | Right View of a Binary Tree | Easy |
